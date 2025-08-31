@@ -12,39 +12,55 @@ author:
     affiliations: Università di Pisa
 date: last-modified
 embed-resources: false
+header-includes:
+  - |
+    <script type="text/javascript">
+    MathJax = {
+      tex: {
+        packages: {'[+]': ['ams']}
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+      }
+    };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 ---
 ## The Standard Model
 
-::: {class="fragment" style="font-size:1.2em; font-weight:300; margin-top:40px;"}
+::: {class="fragment" style="font-size:1.4em; font-weight:300; margin-top:40px;"}
 The most successful theory (so far) of **fundamental interactions**
 :::
 
-::: {class="fragment" style="font-size:0.9em; margin-top:30px;"}
+::: {class="fragment" style="font-size:1.1em; margin-top:30px;"}
 **Gauge principle:** <br>
 Interactions arise by requiring invariance under local symmetry transformations.
 :::
 
+:::{.r-hstack style="align-items: center; justify-content:flex-start; gap:180px;"}
 
-::: {class="fragment" style="font-size:0.9em; margin-top:10px; text-align:left"}
+::: {class="fragment" style="font-size:1.1em; margin-top:10px; text-align:left"}
 - **Electromagnetic** → $\mathrm{U}(1)_{\text{em}}$ <br> <span style="font-size:0.8em; color:gray;">acts on charged particles </span>
 - **Weak** → $\mathrm{SU}(2)_L$ <br><span style="font-size:0.8em; color:gray;"> responsable of radioactive decays </span>
 - **Strong** →  $\mathrm{SU}(3)_C$<br><span style="font-size:0.8em; color:gray;">binds quarks inside hadrons </span>  
 
 :::
-::: {class="fragment" style="font-size:0.9em; margin-top:10px;"}
+
+::: {class="fragment" style="font-size:1.1em; margin-top:10px; text-align: center"}
 $$\mathcal{L}_{\text{SM}} \;=\; \mathcal{L}_{\text{gauge}} + \mathcal{L}_{\text{matter}} + \mathcal{L}_{\text{Higgs}}$$
 :::
+:::
 
-
-
-::: {class="fragment" style="font-size:0.9em; font-style:italic; color:gray; margin-top:70px; text-align: right; "}
+::: {class="fragment" style="font-size:1.1em; font-style:italic; color:gray; margin-top:40px; margin-right:70px; text-align: right; "}
 Gravity unfortunately is not included in the Standard Model.
 :::
 
 
 ## The Strong Interaction {auto-animate=true auto-animate-easing="ease"}
 
-::: {class="fragment" style="position:absolute; left:230px; top:20px;  justify-content:center; font-size:1.3em; font-weight:300;"}
+
+
+::: {class="fragment" data-fragment-index="1" style="position:absolute; left:230px; top:60px;  justify-content:center; font-size:1.3em; font-weight:400;"}
 Matter content:
 :::
 
@@ -52,15 +68,15 @@ Matter content:
 ::: {.r-vstack}
 ::: {.r-hstack}
 
-::: {data-id="up" class="fragment zoom-in" style="position:absolute; left:50px; top:100px; background:#d72638; width:160px; height:160px; border-radius:50%; display:flex; align-items:center; justify-content:center; color:white; font-weight:450; text-align:center;"}
+::: {data-id="up" class="fragment zoom-in" data-fragment-index="2" style="position:absolute; left:50px; top:100px; background:#d72638; width:160px; height:160px; border-radius:50%; display:flex; align-items:center; justify-content:center; color:white; font-weight:450; text-align:center;"}
 u<br>(Up)<br> <span style="font-size:0.7em;"> $m_u \simeq 2 \mathrm{~MeV}$</span>
 :::
 
-::: {data-id="down" class="fragment zoom-in" style="position:absolute; left:250px; top:100px; background:#3f88c5; width:160px; height:160px; border-radius:50%; display:flex; align-items:center; justify-content:center; color:white; font-weight:450; text-align:center;"}
+::: {data-id="down" class="fragment zoom-in"data-fragment-index="2" style="position:absolute; left:250px; top:100px; background:#3f88c5; width:160px; height:160px; border-radius:50%; display:flex; align-items:center; justify-content:center; color:white; font-weight:450; text-align:center;"}
 d<br>(Down)<span style="font-size:0.7em;"> $m_u \simeq 2 \mathrm{~MeV}$</span>
 :::
 
-::: {data-id="strange" class="fragment zoom-in" style="position:absolute; left:450px; top:100px; background:#f49d37; width:160px; height:160px; border-radius:50%; display:flex; align-items:center; justify-content:center; color:white; font-weight:450; text-align:center;"}
+::: {data-id="strange" class="fragment zoom-in" data-fragment-index="2"style="position:absolute; left:450px; top:100px; background:#f49d37; width:160px; height:160px; border-radius:50%; display:flex; align-items:center; justify-content:center; color:white; font-weight:450; text-align:center;"}
 s<br>(Strange)<span style="font-size:0.7em;"> $m_u \simeq 2 \mathrm{~MeV}$</span>
 :::
 
@@ -68,15 +84,15 @@ s<br>(Strange)<span style="font-size:0.7em;"> $m_u \simeq 2 \mathrm{~MeV}$</span
 
 ::: {.r-hstack}
 
-::: {data-id="charm" class="fragment zoom-in" style="position:absolute; left:50px; top:300px; background:#8ac926; width:160px; height:160px; border-radius:50%; display:flex; align-items:center; justify-content:center; color:white; font-weight:450; text-align:center;"}
+::: {data-id="charm" class="fragment zoom-in" data-fragment-index="3" style="position:absolute; left:50px; top:300px; background:#8ac926; width:160px; height:160px; border-radius:50%; display:flex; align-items:center; justify-content:center; color:white; font-weight:450; text-align:center;"}
 c<br>(Charm)<span style="font-size:0.7em;"> $m_u \simeq 2 \mathrm{~MeV}$</span>
 :::
 
-::: {data-id="bottom" class="fragment zoom-in" style="position:absolute; left:250px; top:300px; background:#6a4c93; width:160px; height:160px; border-radius:50%; display:flex; align-items:center; justify-content:center; color:white; font-weight:450; text-align:center;"}
+::: {data-id="bottom" class="fragment zoom-in" data-fragment-index="3" style="position:absolute; left:250px; top:300px; background:#6a4c93; width:160px; height:160px; border-radius:50%; display:flex; align-items:center; justify-content:center; color:white; font-weight:450; text-align:center;"}
 b<br>(Bottom)<span style="font-size:0.7em;"> $m_u \simeq 2 \mathrm{~MeV}$</span>
 :::
 
-::: {data-id="top" class="fragment zoom-in" style="position:absolute; left:450px; top:300px; background:#ff7b00; width:160px; height:160px; border-radius:50%; display:flex; align-items:center; justify-content:center; color:white; font-weight:450; text-align:center;"}
+::: {data-id="top" class="fragment zoom-in" data-fragment-index="3" style="position:absolute; left:450px; top:300px; background:#ff7b00; width:160px; height:160px; border-radius:50%; display:flex; align-items:center; justify-content:center; color:white; font-weight:450; text-align:center;"}
 t<br>(Top)<span style="font-size:0.7em;"> $m_u \simeq 2 \mathrm{~MeV}$</span>
 :::
 
@@ -225,8 +241,51 @@ HPC
 <img src="lattice3d.svg" style="width:100%; height:auto; max-width:none; ">
 </div>
 
-## QCD inn the continuum
+## QCD in the Continuum {auto-animate=true}
 
+:::{data-id="lag"}
+  $$\mathcal{L}_{\mathrm{QCD}} =\mathcal{L}_{\mathrm{gauge}}+\mathcal{L}_{\mathrm{matter}}$$
+:::
+
+## QCD in the Continuum {auto-animate=true auto-animate-easing="ease-in" auto-animate-duration=0.5}
+
+$$
+\mathcal{L}_{\mathrm{QCD}} \;=\;
+-\frac{1}{4} F_{\mu\nu}^a F^{a\,\mu\nu}
+\;+\;
+\sum_{f=1}^{N_f} \bar{\psi}_f \big( i \gamma^\mu D_\mu - m_f \big) \psi_f
+$$
+<!-- 
+::: {style="font-size:0.8em; color:gray; margin-top:20px;"}
+Gauge fields: $F_{\mu\nu}^a = \partial_\mu A_\nu^a - \partial_\nu A_\mu^a + g f^{abc} A_\mu^b A_\nu^c$
+:::
+
+::: {style="font-size:0.8em; color:gray; margin-top:20px;"}
+Matter fields: $D_\mu = \partial_\mu - i g A_\mu^a T^a$
+:::
+-->
+
+## QCD in the continuum
+
+<div style=" width: 90vw; padding-top: 66.67%;position: absolute; top:10%; left:35%; text-align: center; overflow: hidden; transform: scale(.5); transform-origin: top left;">
+  <img src="qed-like.svg" class="fragment zoom-in" style="position:absolute; top:0; left:50%; transform:translateX(-50%) scale(3); width:80%; height:auto;  object-fit: contain;">
+</div>
+
+
+<!--
+::: {class="fragment zoom-in"}
+![](qed-like.svg){width=300%}
+:::
+
+::: {class="fragment zoom-in"}
+![](gluethree.svg){width=40%}
+:::
+
+::: {class="fragment zoom-in"}
+![](gluefour.svg){width=40%}
+:::
+-->
+## QCD in the continuum
 
 <div style="width: 80%; margin: 0 auto; word-spacing: normal; letter-spacing: normal; font-size:0.5em">
 Ciao CIao Ciao CIao Ciao CIao Ciao CIao Ciao CIao Ciao CIao Ciao CIao Ciao CIao Ciao CIao Ciao CIao Ciao CIao Ciao CIao
