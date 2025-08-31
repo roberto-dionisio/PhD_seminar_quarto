@@ -1,0 +1,9 @@
+project:
+  title: "quarto_PhD_seminar"
+format:
+  revealjs:
+    plugins: [auto-animate]
+    embed-resources: true
+    theme: "metropolis-beamer-revealjs"
+    preload-iframes: true
+
