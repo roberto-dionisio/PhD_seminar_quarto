@@ -15,14 +15,20 @@ embed-resources: false
 header-includes:
   - |
     <script type="text/javascript">
-    MathJax = {
-      tex: {
-        packages: {'[+]': ['ams']}
-      },
-      options: {
-        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
-      }
-    };
+      window.MathJax = {
+        tex: {
+          packages: {'[+]': ['ams', 'color']},
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          displayMath: [['$$', '$$'], ['\\[', '\\]']],
+          processEscapes: true
+        },
+        loader: {
+          load: ['[tex]/color']
+        },
+        options: {
+          skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+        }
+      };
     </script>
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 ---
@@ -243,47 +249,51 @@ HPC
 
 ## QCD in the Continuum {auto-animate=true}
 
-:::{data-id="lag"}
   $$\mathcal{L}_{\mathrm{QCD}} =\mathcal{L}_{\mathrm{gauge}}+\mathcal{L}_{\mathrm{matter}}$$
-:::
+
 
 ## QCD in the Continuum {auto-animate=true auto-animate-easing="ease-in" auto-animate-duration=0.5}
 
+$$\textcolor{red}{e^x}$$
+
+Alternative: $\color{red}e^x$ and $\color{blue}{\sqrt{2}}$
+
+
+
+
+
+## QCD in the Continuum {auto-animate=true auto-animate-easing="ease-in" auto-animate-duration=0.5}
+
+::: {data-id="lag"}
 $$
 \mathcal{L}_{\mathrm{QCD}} \;=\;
--\frac{1}{4} F_{\mu\nu}^a F^{a\,\mu\nu}
+-\tfrac{1}{2}\mathrm{Tr} \left[ F_{\mu\nu} F^{\mu\nu}\right]
 \;+\;
-\sum_{f=1}^{N_f} \bar{\psi}_f \big( i \gamma^\mu D_\mu - m_f \big) \psi_f
+\color{orange}{\sum_{f=1}^{N_f} \bar{\psi}_f \big( i \gamma^\mu D_\mu - m_f \big) \psi_f}
 $$
-<!-- 
-::: {style="font-size:0.8em; color:gray; margin-top:20px;"}
-Gauge fields: $F_{\mu\nu}^a = \partial_\mu A_\nu^a - \partial_\nu A_\mu^a + g f^{abc} A_\mu^b A_\nu^c$
 :::
 
-::: {style="font-size:0.8em; color:gray; margin-top:20px;"}
-Matter fields: $D_\mu = \partial_\mu - i g A_\mu^a T^a$
-:::
--->
+
+
+
+
 
 ## QCD in the continuum
 
-<div style=" width: 90vw; padding-top: 66.67%;position: absolute; top:10%; left:35%; text-align: center; overflow: hidden; transform: scale(.5); transform-origin: top left;">
-  <img src="qed-like.svg" class="fragment zoom-in" style="position:absolute; top:0; left:50%; transform:translateX(-50%) scale(3); width:80%; height:auto;  object-fit: contain;">
-</div>
+
+
+:::{.r-hstack style="align-items:center; justify-content:center; margin-top:300px"}
+
+<img src="qed-liketest-2.png" class="fragment fade-in-then-semi-out" data-fragment-index="1" style="width:20%; display:inline-block;" />
+<img src="gluethree-test-2.png" class="fragment zoom-in" data-fragment-index="2" style="width:20%; display:inline-block;" />
+<img src="gluefour-test-2.png" class="fragment zoom-in" data-fragment-index="2" style="width:20%; display:inline-block;" />
+
+:::
+
 
 
 <!--
-::: {class="fragment zoom-in"}
-![](qed-like.svg){width=300%}
-:::
 
-::: {class="fragment zoom-in"}
-![](gluethree.svg){width=40%}
-:::
-
-::: {class="fragment zoom-in"}
-![](gluefour.svg){width=40%}
-:::
 -->
 ## QCD in the continuum
 

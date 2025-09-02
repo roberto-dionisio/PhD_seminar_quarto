@@ -6,4 +6,3 @@ format:
     embed-resources: true
     theme: "metropolis-beamer-revealjs"
     preload-iframes: true
-
