@@ -475,59 +475,61 @@ $$
 
 ::::
 
-## Prova {auto-animate=true}
+
+## Interactions in QCD
+
+::: {class="fragment" data-fragment-index="1"}
+**Gauge invariance** not only dictates the kinetic terms, but also **fixes the interaction structure**:
+:::
+
+::: {class="fragment" data-fragment-index="1" style="margin-top:10px; margin-left:120px; justify-content:center; font-size:1.3em; font-weight:200;"}
+$\small \sim g \bar{\psi}\psi A$
+
+
+:::
+::: {class="fragment" data-fragment-index="3" style="margin-top:-54px; margin-left:550px; justify-content:center; font-size:1.3em; font-weight:200;"}
+$\small \sim g \partial A A A \quad \quad \quad \sim g^2 AAAA$
+:::
+
+
+:::{.r-hstack style="align-items:center; justify-content:center; margin-top:-10px;"}
+
+<img src="qed-liketest-2.png" class="fragment fade-in-then-semi-out" data-fragment-index="2" style="width:20%; display:inline-block; margin-left:40px;" />
+<img src="gluethree-test-2.png" class="fragment zoom-in" data-fragment-index="4" style="width:20%; display:inline-block; margin-left:240px;" />
+<img src="gluefour-test-2.png" class="fragment zoom-in" data-fragment-index="4" style="width:20%; display:inline-block;" />
+
+:::
 
 :::: {.columns}
 
-::: {.column width="50%" style="margin-top:0px;"}
+::: {.column width="50%" style="margin-top:-35px;"}
 
-::: {class="fragment"}
-**Chiral Transformations**:  
-$$
-\psi \;\to\; e^{\,i \alpha \gamma_5/2}\, \psi,
-\quad 
-\bar{\psi} \;\to\; \bar{\psi}\,e^{\,i \alpha \gamma_5/2}
-$$
-- Symmetry for $\;m_f \to 0$  
-:::
-
-::: {class="fragment"}
-**Left / Right modes**:  
-$$
-\psi_{L,R} = P_{L,R}\psi, \quad P_{L,R}=\tfrac{1\mp\gamma_5}{2}
-$$
-- Kinetic term: $\bar\psi i\slashed{D}\psi = \bar\psi_L i\slashed{D}\psi_L + \bar\psi_R i\slashed{D}\psi_R$  
-  → does **not mix** chirality  
-- Mass term: $\bar\psi m \psi = \bar\psi_L m \psi_R + \bar\psi_R m \psi_L$  
-  → couples L/R
+::: {class="fragment" data-fragment-index="2"}
+- **QED-like vertex**  
+  - quark–gluon interaction  
+  - analogous to electron–photon in QED
 :::
 
 :::
 
-::: {.column width="50%" style="margin-top:0px;"}
+::: {.column width="50%" style="margin-top:-35px;"}
 
-::: {class="fragment"}
-**In the chiral limit** ($m_{u,d}=0$):  
-- Global symmetry  
-  $\mathrm{SU}(2)_V \times \mathrm{SU}(2)_A \times \mathrm{U}(1)_V$  
-- No parity doubling in the spectrum
-:::
-
-::: {class="fragment"}
-**In real QCD**:  
-1. **Spontaneous breaking**  
-   - $\langle \bar\psi\psi \rangle \neq 0$  
-   - $\mathrm{SU}(2)_A$ broken → 3 NG bosons = pions  
-2. **Explicit breaking**  
-   - small $m_{u,d}\neq 0$  
-   - GMOR: $M_\pi^2 \sim (m_u+m_d)\,\langle\bar\psi\psi\rangle/f_\pi^2$
+::: {class="fragment" data-fragment-index="4"}
+- **New in QCD**  
+  - 3-gluon and 4-gluon self-interactions  
+  - consequence of non-abelian $\mathrm{SU}(3)_C$  
+  - lead to confinement, asymptotic freedom, glueballs...
 :::
 
 :::
 
 ::::
 
-## QCD in the continuum
+::: {class="fragment" style="margin-top:-10px; font-style:italic; color:gray; text-align:left;"}
+  
+Quantum corrections lead to divergencies:  
+  Interactions are treated in the **renormalization framework** → [**running**]{style="color: #EB811B;"} of the coupling $g(\mu)$.
+::: 
 
 
 
@@ -539,43 +541,145 @@ $$
 
 :::
 
+## Running of the Coupling
+
+:::: {.columns}
+
+::: {.column width="45%"}
+
+::: {class="fragment"}
+- **Scale dependent** coupling: $\small g \,\longrightarrow\, g(\mu)$
+:::
+
+::: {class="fragment"}
+- Governed by the **β-function**:  
+  $$\small
+  \mu \frac{dg}{d\mu} = \beta(g),
+  \quad
+  \beta(g) = -\beta_0 \frac{g^3}{16\pi^2} + \mathcal{O}(g^5)
+  $$
+  with $\small \;\beta_0 = 11 - \tfrac{2}{3} N_f$
+:::
+
+::: {class="fragment"}
+- **Solution at 1-loop**:  
+  $$\small
+  \alpha_s(\mu) \equiv \frac{g^2(\mu)}{4\pi}
+  = \frac{1}{\beta_0 \ln(\mu^2 / \Lambda_{\text{QCD}}^2)}
+  $$
+:::
 
 
-<!--
+:::
 
--->
-## QCD in the continuum
+::: {.column width="50%"}
 
-<div style="width: 80%; margin: 0 auto; word-spacing: normal; letter-spacing: normal; font-size:0.5em">
-Ciao CIao Ciao CIao Ciao CIao Ciao CIao Ciao CIao Ciao CIao Ciao CIao Ciao CIao Ciao CIao Ciao CIao Ciao CIao Ciao CIao
-</div>
-
-<div style=" width: 90vw; padding-top: 66.67%;position: absolute; top:10%; left:35%; text-align: center; overflow: hidden; transform: scale(.5); transform-origin: top left;">
+<div style=" width: 90vw; padding-top: 66.67%;position: absolute; top:10%; left:40%; text-align: center; overflow: hidden; transform: scale(.5); transform-origin: top left;">
   <img src="axes.svg" class="fragment" style="position:absolute; top:0; left:50%; transform:translateX(-50%); width:80%; height:auto;  object-fit: contain;">
   <img src="ax_curve.svg" class="fragment" style="position:absolute; top:0; left:50%; transform:translateX(-50%); width:80%; height:auto;  object-fit: contain;">
   <img src="points.svg" class="fragment zoom-in" style="position:absolute; top:2%; left:58%; transform:translateX(-50%); width:80%; height:auto;  object-fit: contain; margin: auto;">
   <img src="points_legend.svg" class="fragment zoom-in" style="position:absolute; top:2%; left:58%; transform:translateX(-50%); width:80%; height:auto; object-fit: contain; margin: auto;">
 </div>
 
-Ciao Ciao Ciao CiaoCiao CiaoCiao CiaoCiao CiaoCiao CiaoCiao CiaoCiao CiaoCiao CiaoCiao CiaoCiao CiaoCiao CiaoCiao CiaoCiao CiaoCiao CiaoCiao Ciao
+:::
 
-$$
-\int dx
-$$
+::::
+
+:::: {.columns}
+
+::: {.column width="50%"}
 
 
+:::
 
-## Test {auto-animate=true}
 
-<div data-id="for" style="text-align: center; position:absolute; left:550px; top:180px;">
-  $$\int dx$$
+::: {.column width="50%" style="margin-top:-60px;"}
+
+::: {class="fragment"}
+- **Consequences**:  
+  - $\small \mu \to \infty \;\;\Rightarrow\;\; \alpha_s(\mu) \to 0 \;\Rightarrow\; \color{#EB811B}\text{asymptotic freedom}$
+  - $\small \mu \to \Lambda_{\text{QCD}} \;\;\Rightarrow\;\; \alpha_s(\mu) \to \infty \;\Rightarrow\; \color{#EB811B}\text{confinement}$  
+
+:::
+
+:::
+
+::::
+
+::: {class="fragment" style="margin-top:10px; font-style:italic; color:gray; text-align:right;"} 
+QCD becomes strongly coupled in the IR → [**non-perturbative tools**]{style="color: #EB811B;"} are required!
+:::
+<!--
+
+-->
+## Confinement
+
+::: {class="fragment"}
+- As $\small \alpha_s(\mu) \to \infty$ at low energies → **quarks and gluons cannot propagate as free states**
+:::
+
+:::: {.columns}
+
+::: {.column width="60%"}
+
+
+::: {class="fragment"}
+- **QCD potential**:
+<div style="margin-top:-20px;"> 
+  $$\small
+  V(r) = -\,\frac{4}{3}\frac{\alpha_s}{r} + \sigma r \quad \quad \quad \;\sigma \approx 0.9\ \mathrm{GeV/fm}
+  $$
 </div>
+:::
 
-## Test {auto-animate=true }
-
-<div data-id="for" style="text-align: center; position:absolute; left:550px; top:180px;">
-  $$\int dx 3+5+6+7+2$$
+::: {class="fragment" style="margin-top:-20px;"}
+- **Force**:
+<div style="margin-top:-20px;">   
+  $$ \small
+  |dV/dr|  \approx 0.9 \times 1.6\cdot10^{-10} \text{J}/10^{-15}\ \text{m} 
+     \approx 1.6\cdot10^{4}\ \text{N}
+  $$
 </div>
+:::
+
+::: {class="fragment fade-in-then-semi-out" style="position:absolute; left:226px; top:265px;"}
+<img src="strong-car.png" style="width:25%; margin:auto; display:block;"/>
+:::
+
+::: {class="fragment" style="margin-top:-15px;"}
+- Only **color-singlet bound states** are physical:  
+  - mesons ($q\bar q$)  
+  - baryons ($qqq$)  
+  - glueballs ($gg, ggg,\dots$)  
+:::
+
+::: {class="fragment"}
+- No direct experimental evidence of isolated quarks  
+  - **jet formation** in high-energy collisions  
+  - **linear potential** at large distances ($V(r) \sim \sigma r$)
+:::
+:::
+
+::: {.column width="40%"}
+<img src="lattice-potential-removebg-preview.png" class="fragment" style="width:85%; margin:auto; display:block;"/>
+:::
+
+::::
+
+::: {.callout type='default' class="fragment" style="margin-top:-40px; width:fit-content; margin-left:200px; margin-right:200px; margin-bottom:50px;"}
+## Particle Data Group
+<img src="pdg.png" class="fragment" style="width:100%; margin-left:0px; margin-right:0px;  margin-top:-10px; display:block;"/>
+:::
+
+
+
+::: {class="fragment" style="margin-top:10px; font-style:italic; color:gray; text-align:center;"}
+**Take-home:** Confinement is a genuinely **non-perturbative feature** of QCD,  
+responsible for the hadronic spectrum and absence of free quarks.
+:::
+
+
+
 
 
 
