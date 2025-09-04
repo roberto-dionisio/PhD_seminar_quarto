@@ -10,7 +10,7 @@
   <meta name="generator" content="quarto-1.8.21">
 
   <meta name="author" content="Roberto Dionisio">
-  <meta name="dcterms.date" content="2025-09-02">
+  <meta name="dcterms.date" content="2025-09-03">
   <title>Strong Interactions need Strong Machines</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -247,7 +247,7 @@ Roberto Dionisio
     </div>
 </div>
 
-  <p class="date">September 2, 2025</p>
+  <p class="date">September 3, 2025</p>
 </section>
 <section id="the-standard-model" class="slide level2">
 <h2>The Standard Model</h2>
@@ -414,27 +414,266 @@ Open questions and challenges
 <p><img src="lattice3d.svg" style="width:100%; height:auto; max-width:none; "></p>
 </div>
 </section>
-<section id="qcd-in-the-continuum" class="slide level2" data-auto-animate="true">
+<section id="qcd-in-the-continuum" class="slide level2" data-auto-animate="true" data-auto-animate-easing="ease-in-ease-out" data-auto-animate-duration="1">
 <h2 data-id="quarto-animate-title">QCD in the Continuum</h2>
+<div data-id="lag" style="margin-top:-30px;">
 <p><span class="math display">\[\mathcal{L}_{\mathrm{QCD}} =\mathcal{L}_{\mathrm{gauge}}+\mathcal{L}_{\mathrm{matter}}\]</span></p>
-</section>
-<section id="qcd-in-the-continuum-1" class="slide level2" data-auto-animate="true" data-auto-animate-easing="ease-in" data-auto-animate-duration="0.5">
-<h2 data-id="quarto-animate-title">QCD in the Continuum</h2>
-<p><span class="math display">\[\textcolor{red}{e^x}\]</span></p>
-<p>Alternative: <span class="math inline">\(\color{red}e^x\)</span> and <span class="math inline">\(\color{blue}{\sqrt{2}}\)</span></p>
-</section>
-<section id="qcd-in-the-continuum-2" class="slide level2" data-auto-animate="true" data-auto-animate-easing="ease-in" data-auto-animate-duration="0.5">
-<h2 data-id="quarto-animate-title">QCD in the Continuum</h2>
-<div data-id="lag">
-<p><span class="math display">\[
-\mathcal{L}_{\mathrm{QCD}} \;=\;
--\tfrac{1}{2}\mathrm{Tr} \left[ F_{\mu\nu} F^{\mu\nu}\right]
-\;+\;
-\color{orange}{\sum_{f=1}^{N_f} \bar{\psi}_f \big( i \gamma^\mu D_\mu - m_f \big) \psi_f}
-\]</span></p>
 </div>
 </section>
-<section id="qcd-in-the-continuum-3" class="slide level2">
+<section id="qcd-in-the-continuum-1" class="slide level2" data-auto-animate="true" data-auto-animate-easing="ease-in-ease-out" data-auto-animate-duration="1">
+<h2 data-id="quarto-animate-title">QCD in the Continuum</h2>
+<div data-id="lag" style="margin-top:-30px;">
+<p><span class="math display">\[\mathcal{L}_{\mathrm{QCD}} =-\tfrac{1}{2}\mathrm{Tr}\left[ F_{\mu\nu} F^{\mu\nu}\right]+\sum_{f=1}^{N_f} \bar{\psi}_f \big( i \gamma^\mu D_\mu - m_f \big) \psi_f\]</span></p>
+</div>
+</section>
+<section id="qcd-in-the-continuum-2" class="slide level2" data-auto-animate="true" data-auto-animate-easing="ease-in-ease-out" data-auto-animate-duration="1">
+<h2 data-id="quarto-animate-title">QCD in the Continuum</h2>
+<div data-id="lag" style="margin-top:-30px;">
+<p><span class="math display">\[\mathcal{L}_{\mathrm{QCD}} =\textcolor{#EB811B}{-\tfrac{1}{2}\mathrm{Tr}\left[F_{\mu\nu} F^{\mu\nu}\right]}
++\sum_{f=1}^{N_f} \bar{\psi}_f \big( i \gamma^\mu D_\mu - m_f \big)\psi_f\]</span></p>
+</div>
+<div class="columns">
+<div class="column" style="margin-top:0px;">
+<div class="fragment">
+<ul>
+<li><strong>Gauge fields</strong>:
+<div style="margin-top:-20px;">
+<p><span class="math display">\[\normalsize A_\mu(x) = \sum_{a=1}^8 A_\mu^a(x)\, T^a\]</span></p>
+</div>
+<ul>
+<li><span class="math inline">\(\small \left[ T_a,T_b\right]= i f_{abc}T_c\)</span> and <span class="math inline">\(\small \left\{ T_a,T_b\right\}= \frac 1 2 \delta_{ab}\)</span></li>
+<li><span class="math inline">\(\small A_\mu(x)\)</span> encapsulates the 8 gluons</li>
+<li><span class="math inline">\(\small A_\mu^a(x)\in \mathfrak{su}(3)\)</span>.</li>
+</ul></li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li><strong>Field strength tensor</strong>:</li>
+</ul>
+<div style="margin-top:-20px;">
+<p><span class="math display">\[
+  F_{\mu\nu} = \partial_\mu A_\nu - \partial_\nu A_\mu
+  - i g \,[A_\mu, A_\nu]
+\]</span></p>
+</div>
+</div>
+</div><div class="column" style="margin-top:0px;">
+<div class="fragment">
+<ul>
+<li><strong>Gauge transformations</strong>:<br>
+<span class="math inline">\(\small \forall\; U(x) \in \mathrm{SU}(3)\)</span>
+<div style="margin-top:-10px; margin-left:80px;">
+<p><span class="math display">\[
+\begin{array}{rcl}
+  A_\mu &amp; \longrightarrow &amp; UA_\mu U^\dagger \\
+  F_{\mu\nu} &amp; \longrightarrow &amp; U\,F_{\mu\nu}\,U^\dagger
+\end{array}
+\]</span></p>
+</div></li>
+</ul>
+</div>
+<div class="fragment" style="margin-top:-27px">
+<ul>
+<li><strong>Covariance</strong>:
+<ul>
+<li><span class="math inline">\(\small F_{\mu\nu}\)</span> transforms <em>homogeneously</em><br>
+</li>
+<li><span class="math inline">\(\small \mathrm{Tr}[F_{\mu\nu}F^{\mu\nu}]\)</span> is <strong>gauge invariant</strong></li>
+</ul></li>
+</ul>
+</div>
+</div></div>
+<div class="fragment" style="font-size:1.0em; font-style:italic; color:gray; margin-top:-20px; margin-right:0px; text-align:right;">
+<p><strong><span style="color: #EB811B;">Pure gauge</span> → already highly non-trivial:</strong><br>
+confinement, glueballs, non-linear self-interactions…</p>
+</div>
+</section>
+<section id="qcd-in-the-continuum-3" class="slide level2" data-auto-animate="true" data-auto-animate-easing="ease-in" data-auto-animate-duration="0.0">
+<h2 data-id="quarto-animate-title">QCD in the Continuum</h2>
+<div data-id="lag" style="margin-top:-30px;">
+<p><span class="math display">\[\mathcal{L}_{\mathrm{QCD}} =
+-\tfrac{1}{2}\mathrm{Tr}\left[F_{\mu\nu} F^{\mu\nu}\right]
++\textcolor{#EB811B}{\sum_{f=1}^{N_f} \bar{\psi}_f \big( i \gamma^\mu D_\mu - m_f \big)\psi_f}\]</span></p>
+</div>
+<div class="columns">
+<div class="column" style="margin-top:0px;">
+<div class="fragment">
+<ul>
+<li><strong>Quark fields</strong>:
+<ul>
+<li><span class="math inline">\(\small \psi_f(x)\)</span> → flavor <span class="math inline">\(\small f=1,\dots,N_f\)</span></li>
+<li>Real world → <span class="math inline">\(\small N_f = 6\)</span></li>
+<li>Fundamental rep. of <span class="math inline">\(\small \mathrm{SU}(3)_C\)</span>
+<ul>
+<li><span class="math inline">\(\small \psi_f(x)\)</span> → <span class="math inline">\(\small (\textcolor{red}{\psi_f(x)}, \textcolor{green}{\psi_f(x)}, \textcolor{blue}{\psi_f(x)})\)</span></li>
+</ul></li>
+</ul></li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li><strong>Covariant derivative</strong>:<br>
+<span class="math display">\[D_\mu = \partial_\mu - i g A_\mu\]</span>
+<ul>
+<li>Couples quarks to gluons<br>
+</li>
+<li>Ensures <strong>local gauge invariance</strong></li>
+</ul></li>
+</ul>
+</div>
+</div><div class="column" style="margin-top:0px;">
+<div class="fragment">
+<ul>
+<li><strong>Gauge transformations</strong>:<br>
+<span class="math inline">\(\small \forall\; U(x) \in \mathrm{SU}(3)\)</span>
+<div style="margin-top:-10px; margin-left:80px;">
+<p><span class="math display">\[
+\begin{array}{rcl}
+  \psi_f &amp; \longrightarrow &amp; U\,\psi_f \\
+  \bar{\psi}_f &amp; \longrightarrow &amp; \bar{\psi}_f\,U^\dagger \\
+  D_\mu \psi_f &amp; \longrightarrow &amp; U\,D_\mu \psi_f
+\end{array}
+\]</span></p>
+</div></li>
+</ul>
+</div>
+<div class="fragment" style="margin-top:-27px">
+<ul>
+<li><strong>Facts</strong>:<br>
+Quarks are never observed as free particles
+<ul>
+<li>Combined into <strong>color singlets</strong> → hadrons
+<ul>
+<li>mesons ( <span class="math inline">\(\small \pi^{\pm}, \pi^0\dots\)</span>)</li>
+<li>baryons ( <span class="math inline">\(\small p,n\dots\)</span>)</li>
+</ul></li>
+</ul></li>
+</ul>
+</div>
+</div></div>
+</section>
+<section id="chiral-limit-in-qcd" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Chiral Limit in QCD</h2>
+<div class="fragment">
+<strong>Chiral Transformations</strong>:
+<div style="margin-top:-20px;">
+<p><span class="math display">\[\psi \;\longrightarrow\;
+  e^{\,i \alpha \gamma_5/2}\, \psi;\quad \quad \bar{\psi} \;\longrightarrow\; \bar{\psi}\,
+  e^{\,i \alpha \gamma_5/2}\]</span></p>
+</div>
+<p>in the <span class="math inline">\(\small m_f \to 0\)</span> is a symmetry of the Lagrangian</p>
+</div>
+<div class="columns">
+<div class="column" style="margin-top:0px;">
+<div class="fragment">
+<ul>
+<li><strong>Left / Right modes</strong>:<br>
+<span class="math display">\[
+\psi_L = P_L \psi, \quad \psi_R = P_R \psi
+\]</span> with <span class="math inline">\(P_{L,R} = \frac{1\mp\gamma_5}{2}\)</span></li>
+</ul>
+</div>
+</div><div class="column" style="margin-top:0px;">
+<div class="fragment" style="margin-top:-24px;">
+<ul>
+<li><span class="math display">\[
+\bar{\psi}\, i\gamma^\mu D_\mu \psi
+= \bar{\psi}_\textcolor{red}{\small L} i\gamma^\mu D_\mu \psi_\textcolor{red}{\small L}
++ \bar{\psi}_\textcolor{blue}{\small R} i\gamma^\mu D_\mu \psi_\textcolor{blue}{\small R}
+\]</span>
+<div style="margin-top:-20px;">
+<p>→ does <strong>not mix</strong> chirality</p>
+</div></li>
+</ul>
+</div>
+<div class="fragment" style="margin-top:-30px;">
+<ul>
+<li><span class="math display">\[
+\,\bar{\psi}m\psi =
+\bar{\psi}_\textcolor{red}{\small L} m \psi_\textcolor{blue}{\small R} + \bar{\psi}_\textcolor{blue}{\small R} m \psi_\textcolor{red}{\small L}
+\]</span>
+<div style="margin-top:-20px;">
+<p>→ explicitly <strong>couples</strong> <span class="math inline">\(\textcolor{red}{\small L}\)</span> and <span class="math inline">\(\textcolor{blue}{\small R}\)</span></p>
+</div></li>
+</ul>
+</div>
+</div></div>
+<div class="fragment" style="margin-top:20px;">
+<ul>
+<li><strong>Chiral limit</strong>: <span class="math inline">\(\small m_u = m_d = 0\)</span> ⇒ <span class="math inline">\(\small \mathrm{SU}(2)_V \times \mathrm{SU}(2)_A \times \mathrm{U}(1)_V\)</span> is a <strong>global symmetry</strong>:
+<ul>
+<li>QCD spectrum <strong>does not show parity doubling</strong>.</li>
+</ul></li>
+</ul>
+</div>
+</section>
+<section id="chiral-symmetry-breaking-in-real-qcd" class="slide level2">
+<h2>Chiral symmetry breaking in real QCD</h2>
+<div class="columns">
+<div class="column" style="margin-top:30px;">
+<div class="fragment" style="margin-top:-20px;">
+<ol type="1">
+<li><strong>Spontaneous breaking</strong>
+<ul>
+<li><span class="math inline">\(\small \langle \bar{\psi}\psi \rangle \neq 0\)</span> (non-trivial QCD vacuum)<br>
+</li>
+<li><span class="math inline">\(\small \mathrm{SU}(2)_V \times \mathrm{SU}(2)_A \times \mathrm{U}(1)_V
+\;\;\longrightarrow\;\; \mathrm{SU}(2)_V \times \mathrm{U}(1)_V\)</span><br>
+</li>
+<li>3 Nambu–Goldstone bosons ⇒ the <strong>pions</strong></li>
+</ul></li>
+<li><strong>Explicit breaking</strong>
+<ul>
+<li>light quark masses <span class="math inline">\(\small m_{u,d} \neq 0\)</span></li>
+<li>GMOR: <span class="math inline">\(\small{ M_{\pi}^2 = (m_u + m_d)}\frac{\large \langle \bar{\psi}\psi \rangle}{\large f_{\pi}^2} \simeq 135 \mathrm{\, MeV}\)</span></li>
+</ul></li>
+</ol>
+</div>
+</div><div class="column" style="margin-top:20px;">
+<p><img src="cool-2.png" class="fragment fade-in-then-semi-out" data-fragment-index="1" style="width:100%; margin-top:-80px; margin-left:60px;"></p>
+</div></div>
+</section>
+<section id="prova" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Prova</h2>
+<div class="columns">
+<div class="column" style="margin-top:0px;">
+<div class="fragment">
+<p><strong>Chiral Transformations</strong>:<br>
+<span class="math display">\[
+\psi \;\to\; e^{\,i \alpha \gamma_5/2}\, \psi,
+\quad
+\bar{\psi} \;\to\; \bar{\psi}\,e^{\,i \alpha \gamma_5/2}
+\]</span> - Symmetry for <span class="math inline">\(\;m_f \to 0\)</span></p>
+</div>
+<div class="fragment">
+<p><strong>Left / Right modes</strong>:<br>
+<span class="math display">\[
+\psi_{L,R} = P_{L,R}\psi, \quad P_{L,R}=\tfrac{1\mp\gamma_5}{2}
+\]</span> - Kinetic term: <span class="math inline">\(\bar\psi i\slashed{D}\psi = \bar\psi_L i\slashed{D}\psi_L + \bar\psi_R i\slashed{D}\psi_R\)</span><br>
+→ does <strong>not mix</strong> chirality<br>
+- Mass term: <span class="math inline">\(\bar\psi m \psi = \bar\psi_L m \psi_R + \bar\psi_R m \psi_L\)</span><br>
+→ couples L/R</p>
+</div>
+</div><div class="column" style="margin-top:0px;">
+<div class="fragment">
+<p><strong>In the chiral limit</strong> (<span class="math inline">\(m_{u,d}=0\)</span>):<br>
+- Global symmetry<br>
+<span class="math inline">\(\mathrm{SU}(2)_V \times \mathrm{SU}(2)_A \times \mathrm{U}(1)_V\)</span><br>
+- No parity doubling in the spectrum</p>
+</div>
+<div class="fragment">
+<p><strong>In real QCD</strong>:<br>
+1. <strong>Spontaneous breaking</strong><br>
+- <span class="math inline">\(\langle \bar\psi\psi \rangle \neq 0\)</span><br>
+- <span class="math inline">\(\mathrm{SU}(2)_A\)</span> broken → 3 NG bosons = pions<br>
+2. <strong>Explicit breaking</strong><br>
+- small <span class="math inline">\(m_{u,d}\neq 0\)</span><br>
+- GMOR: <span class="math inline">\(M_\pi^2 \sim (m_u+m_d)\,\langle\bar\psi\psi\rangle/f_\pi^2\)</span></p>
+</div>
+</div></div>
+</section>
+<section id="qcd-in-the-continuum-4" class="slide level2">
 <h2>QCD in the continuum</h2>
 <div class="r-hstack" style="align-items:center; justify-content:center; margin-top:300px">
 <p><img src="qed-liketest-2.png" class="fragment fade-in-then-semi-out" data-fragment-index="1" style="width:20%; display:inline-block;"> <img src="gluethree-test-2.png" class="fragment zoom-in" data-fragment-index="2" style="width:20%; display:inline-block;"> <img src="gluefour-test-2.png" class="fragment zoom-in" data-fragment-index="2" style="width:20%; display:inline-block;"></p>
@@ -443,7 +682,7 @@ Open questions and challenges
 
 -->
 </section>
-<section id="qcd-in-the-continuum-4" class="slide level2">
+<section id="qcd-in-the-continuum-5" class="slide level2">
 <h2>QCD in the continuum</h2>
 <div style="width: 80%; margin: 0 auto; word-spacing: normal; letter-spacing: normal; font-size:0.5em">
 <p>Ciao CIao Ciao CIao Ciao CIao Ciao CIao Ciao CIao Ciao CIao Ciao CIao Ciao CIao Ciao CIao Ciao CIao Ciao CIao Ciao CIao</p>

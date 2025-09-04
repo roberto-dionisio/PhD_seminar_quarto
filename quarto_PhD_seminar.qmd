@@ -247,36 +247,285 @@ HPC
 <img src="lattice3d.svg" style="width:100%; height:auto; max-width:none; ">
 </div>
 
-## QCD in the Continuum {auto-animate=true}
+## QCD in the Continuum {auto-animate=true auto-animate-easing="ease-in-ease-out" auto-animate-duration=1}
+<div data-id="lag" style="margin-top:-30px;">
+$$\mathcal{L}_{\mathrm{QCD}} =\mathcal{L}_{\mathrm{gauge}}+\mathcal{L}_{\mathrm{matter}}$$
+</div>
 
-  $$\mathcal{L}_{\mathrm{QCD}} =\mathcal{L}_{\mathrm{gauge}}+\mathcal{L}_{\mathrm{matter}}$$
+## QCD in the Continuum {auto-animate=true auto-animate-easing="ease-in-ease-out" auto-animate-duration=1}
 
+<div data-id="lag" style="margin-top:-30px;">
+$$\mathcal{L}_{\mathrm{QCD}} =-\tfrac{1}{2}\mathrm{Tr}\left[ F_{\mu\nu} F^{\mu\nu}\right]+\sum_{f=1}^{N_f} \bar{\psi}_f \big( i \gamma^\mu D_\mu - m_f \big) \psi_f$$
+</div>
 
-## QCD in the Continuum {auto-animate=true auto-animate-easing="ease-in" auto-animate-duration=0.5}
+## QCD in the Continuum {auto-animate=true auto-animate-easing="ease-in-ease-out" auto-animate-duration=1}
 
-$$\textcolor{red}{e^x}$$
+<div data-id="lag" style="margin-top:-30px;">
+$$\mathcal{L}_{\mathrm{QCD}} =\textcolor{#EB811B}{-\tfrac{1}{2}\mathrm{Tr}\left[F_{\mu\nu} F^{\mu\nu}\right]}
++\sum_{f=1}^{N_f} \bar{\psi}_f \big( i \gamma^\mu D_\mu - m_f \big)\psi_f$$
+</div>
 
-Alternative: $\color{red}e^x$ and $\color{blue}{\sqrt{2}}$
+:::: {.columns }
 
+::: {.column width="50%" style="margin-top:0px;"}
+::: {class="fragment"}
+- **Gauge fields**:
+<div style="margin-top:-20px;">
+  $$\normalsize A_\mu(x) = \sum_{a=1}^8 A_\mu^a(x)\, T^a$$
+</div>
+  - $\small \left[ T_a,T_b\right]= i f_{abc}T_c$ and $\small \left\{ T_a,T_b\right\}= \frac 1 2 \delta_{ab}$
+  - $\small A_\mu(x)$ encapsulates the 8 gluons 
+  - $\small A_\mu^a(x)\in \mathfrak{su}(3)$.
 
+:::
 
+::: {class="fragment"}
 
+- **Field strength tensor**: 
 
-## QCD in the Continuum {auto-animate=true auto-animate-easing="ease-in" auto-animate-duration=0.5}
-
-::: {data-id="lag"}
+<div style="margin-top:-20px;">
 $$
-\mathcal{L}_{\mathrm{QCD}} \;=\;
--\tfrac{1}{2}\mathrm{Tr} \left[ F_{\mu\nu} F^{\mu\nu}\right]
-\;+\;
-\color{orange}{\sum_{f=1}^{N_f} \bar{\psi}_f \big( i \gamma^\mu D_\mu - m_f \big) \psi_f}
+  F_{\mu\nu} = \partial_\mu A_\nu - \partial_\nu A_\mu
+  - i g \,[A_\mu, A_\nu]
 $$
+</div>
+
+:::
+
+:::
+
+::: {.column width="50%" style="margin-top:0px;"}
+
+::: {class="fragment"}
+- **Gauge transformations**:  
+    $\small \forall\; U(x) \in \mathrm{SU}(3)$
+<div style="margin-top:-10px; margin-left:80px;">
+$$
+ \begin{array}{rcl}
+    A_\mu & \longrightarrow & UA_\mu U^\dagger \\
+    F_{\mu\nu} & \longrightarrow & U\,F_{\mu\nu}\,U^\dagger 
+  \end{array}
+$$
+</div>
+
+:::
+
+::: {class="fragment" style="margin-top:-27px"}
+- **Covariance**:  
+  - $\small F_{\mu\nu}$ transforms *homogeneously*  
+  - $\small \mathrm{Tr}[F_{\mu\nu}F^{\mu\nu}]$ is **gauge invariant**
+:::
+
+:::
+
+::::
+
+::: {class="fragment" style="font-size:1.0em; font-style:italic; color:gray; margin-top:-20px; margin-right:0px; text-align:right;"}
+**[Pure gauge]{style="color: #EB811B;"} → already highly non-trivial:**  
+confinement, glueballs, non-linear self-interactions...
 :::
 
 
+## QCD in the Continuum {auto-animate=true auto-animate-easing="ease-in" auto-animate-duration=0.0}
+
+<div data-id="lag" style="margin-top:-30px;">
+$$\mathcal{L}_{\mathrm{QCD}} =
+-\tfrac{1}{2}\mathrm{Tr}\left[F_{\mu\nu} F^{\mu\nu}\right]
++\textcolor{#EB811B}{\sum_{f=1}^{N_f} \bar{\psi}_f \big( i \gamma^\mu D_\mu - m_f \big)\psi_f}$$
+</div>
+
+:::: {.columns}
+
+::: {.column width="50%" style="margin-top:0px;"}
+
+::: {class="fragment"}
+- **Quark fields**:  
+  - $\small \psi_f(x)$ &rightarrow; flavor $\small f=1,\dots,N_f$
+  - Real world &rightarrow; $\small N_f = 6$
+  - Fundamental rep. of $\small \mathrm{SU}(3)_C$
+    - $\small \psi_f(x)$ &rightarrow; $\small (\textcolor{red}{\psi_f(x)}, \textcolor{green}{\psi_f(x)}, \textcolor{blue}{\psi_f(x)})$
+:::
+
+::: {class="fragment" }
+- **Covariant derivative**:  
+   $$D_\mu = \partial_\mu - i g A_\mu$$  
+  - Couples quarks to gluons  
+  - Ensures **local gauge invariance**
+:::
+
+:::
+
+::: {.column width="50%" style="margin-top:0px;"}
+
+::: {class="fragment"}
+- **Gauge transformations**:  
+    $\small \forall\; U(x) \in \mathrm{SU}(3)$
+<div style="margin-top:-10px; margin-left:80px;">
+$$
+ \begin{array}{rcl}
+    \psi_f & \longrightarrow & U\,\psi_f \\
+    \bar{\psi}_f & \longrightarrow & \bar{\psi}_f\,U^\dagger \\
+    D_\mu \psi_f & \longrightarrow & U\,D_\mu \psi_f
+  \end{array}
+$$
+</div>
+:::
+
+::: {class="fragment" style="margin-top:-27px"}
+- **Facts**:  
+Quarks are never observed as free particles  
+  - Combined into **color singlets** → hadrons
+    - mesons ( $\small \pi^{\pm}, \pi^0\dots$)
+    - baryons ( $\small p,n\dots$)
+:::
+
+:::
+
+::::
+
+## Chiral Limit in QCD {auto-animate=true}
+
+::: {class="fragment"}
+ **Chiral Transformations**:
+ <div style="margin-top:-20px;">  
+  $$\psi \;\longrightarrow\;
+  e^{\,i \alpha \gamma_5/2}\, \psi;\quad \quad \bar{\psi} \;\longrightarrow\; \bar{\psi}\,
+  e^{\,i \alpha \gamma_5/2}$$
+</div>
+
+ in the $\small m_f \to 0$ is a symmetry of the Lagrangian
 
 
+:::
 
+:::: {.columns}
+
+::: {.column width="50%" style="margin-top:0px;"}
+
+::: {class="fragment"}
+- **Left / Right modes**:  
+  $$
+  \psi_L = P_L \psi, \quad \psi_R = P_R \psi
+  $$
+  with $P_{L,R} = \frac{1\mp\gamma_5}{2}$
+:::
+
+:::
+::: {.column width="50%" style="margin-top:0px;"}
+
+::: {class="fragment" style="margin-top:-24px;"}
+
+- $$
+  \bar{\psi}\, i\gamma^\mu D_\mu \psi 
+  = \bar{\psi}_\textcolor{red}{\small L} i\gamma^\mu D_\mu \psi_\textcolor{red}{\small L}
+   + \bar{\psi}_\textcolor{blue}{\small R} i\gamma^\mu D_\mu \psi_\textcolor{blue}{\small R}
+  $$
+<div style="margin-top:-20px;">
+  → does **not mix** chirality
+  </div>
+
+:::
+
+::: {class="fragment" style="margin-top:-30px;" }
+- 
+$$
+   \,\bar{\psi}m\psi = 
+\bar{\psi}_\textcolor{red}{\small L} m \psi_\textcolor{blue}{\small R} + \bar{\psi}_\textcolor{blue}{\small R} m \psi_\textcolor{red}{\small L}
+  $$
+<div style="margin-top:-20px;">
+  → explicitly **couples** $\textcolor{red}{\small L}$ and $\textcolor{blue}{\small R}$
+</div>
+
+:::
+:::
+
+::::
+
+::: {class="fragment" style="margin-top:20px;"}
+
+- **Chiral limit**: $\small m_u = m_d = 0$ &Rightarrow;  $\small \mathrm{SU}(2)_V \times \mathrm{SU}(2)_A \times \mathrm{U}(1)_V$ is a **global symmetry**:
+  - QCD spectrum **does not show parity doubling**.
+
+:::
+
+## Chiral symmetry breaking in real QCD
+
+
+:::: {.columns}
+
+::: {.column width="50%" style="margin-top:30px;"}
+::: {class="fragment" style="margin-top:-20px;"}
+1. **Spontaneous breaking**  
+   - $\small \langle \bar{\psi}\psi \rangle \neq 0$ (non-trivial QCD vacuum)  
+   - $\small \mathrm{SU}(2)_V \times \mathrm{SU}(2)_A \times \mathrm{U}(1)_V 
+      \;\;\longrightarrow\;\; \mathrm{SU}(2)_V \times \mathrm{U}(1)_V$  
+   - 3 Nambu–Goldstone bosons &Rightarrow; the **pions**
+
+2. **Explicit breaking**  
+   - light quark masses $\small m_{u,d} \neq 0$
+   - GMOR: $\small{ M_{\pi}^2 = (m_u + m_d)}\frac{\large \langle \bar{\psi}\psi \rangle}{\large f_{\pi}^2} \simeq 135 \mathrm{\, MeV}$
+
+:::
+:::
+
+::: {.column width="50%" style="margin-top:20px;"}
+<img src="cool-2.png" class="fragment fade-in-then-semi-out" data-fragment-index="1" style="width:100%; margin-top:-80px; margin-left:60px;" />
+
+:::
+
+::::
+
+## Prova {auto-animate=true}
+
+:::: {.columns}
+
+::: {.column width="50%" style="margin-top:0px;"}
+
+::: {class="fragment"}
+**Chiral Transformations**:  
+$$
+\psi \;\to\; e^{\,i \alpha \gamma_5/2}\, \psi,
+\quad 
+\bar{\psi} \;\to\; \bar{\psi}\,e^{\,i \alpha \gamma_5/2}
+$$
+- Symmetry for $\;m_f \to 0$  
+:::
+
+::: {class="fragment"}
+**Left / Right modes**:  
+$$
+\psi_{L,R} = P_{L,R}\psi, \quad P_{L,R}=\tfrac{1\mp\gamma_5}{2}
+$$
+- Kinetic term: $\bar\psi i\slashed{D}\psi = \bar\psi_L i\slashed{D}\psi_L + \bar\psi_R i\slashed{D}\psi_R$  
+  → does **not mix** chirality  
+- Mass term: $\bar\psi m \psi = \bar\psi_L m \psi_R + \bar\psi_R m \psi_L$  
+  → couples L/R
+:::
+
+:::
+
+::: {.column width="50%" style="margin-top:0px;"}
+
+::: {class="fragment"}
+**In the chiral limit** ($m_{u,d}=0$):  
+- Global symmetry  
+  $\mathrm{SU}(2)_V \times \mathrm{SU}(2)_A \times \mathrm{U}(1)_V$  
+- No parity doubling in the spectrum
+:::
+
+::: {class="fragment"}
+**In real QCD**:  
+1. **Spontaneous breaking**  
+   - $\langle \bar\psi\psi \rangle \neq 0$  
+   - $\mathrm{SU}(2)_A$ broken → 3 NG bosons = pions  
+2. **Explicit breaking**  
+   - small $m_{u,d}\neq 0$  
+   - GMOR: $M_\pi^2 \sim (m_u+m_d)\,\langle\bar\psi\psi\rangle/f_\pi^2$
+:::
+
+:::
+
+::::
 
 ## QCD in the continuum
 
