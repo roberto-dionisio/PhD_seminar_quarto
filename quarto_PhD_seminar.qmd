@@ -615,7 +615,7 @@ QCD becomes strongly coupled in the IR → [**non-perturbative tools**]{style="c
 ## Confinement
 
 ::: {class="fragment"}
-- As $\small \alpha_s(\mu) \to \infty$ at low energies → **quarks and gluons cannot propagate as free states**
+- At low energies $\small \alpha_s(\mu) \gg 1$ 
 :::
 
 :::: {.columns}
@@ -634,55 +634,147 @@ QCD becomes strongly coupled in the IR → [**non-perturbative tools**]{style="c
 
 ::: {class="fragment" style="margin-top:-20px;"}
 - **Force**:
-<div style="margin-top:-20px;">   
+  <div style="margin-top:-20px;">   
   $$ \small
-  |dV/dr|  \approx 0.9 \times 1.6\cdot10^{-10} \text{J}/10^{-15}\ \text{m} 
+  |dV/dr|_{\mathrm{QCD}}  \approx 0.9 \times 1.6\cdot10^{-10} \text{J}/10^{-15}\ \text{m} 
      \approx 1.6\cdot10^{4}\ \text{N}
   $$
 </div>
 :::
 
-::: {class="fragment fade-in-then-semi-out" style="position:absolute; left:226px; top:265px;"}
+::: {class="fragment fade-in-then-semi-out" style="position:absolute; left:267px; top:265px;"}
 <img src="strong-car.png" style="width:25%; margin:auto; display:block;"/>
 :::
 
-::: {class="fragment" style="margin-top:-15px;"}
-- Only **color-singlet bound states** are physical:  
-  - mesons ($q\bar q$)  
-  - baryons ($qqq$)  
-  - glueballs ($gg, ggg,\dots$)  
+::: {class="fragment" style="margin-top:-40px; margin-left:25px;"}
+<div style="margin-top:-20px; text-align:left;">   
+$\small |dV/dr|_{\mathrm{QED}} \approx 2.3 \cdot 10^{2} \ \mathrm{N}$
+</div>
 :::
 
-::: {class="fragment"}
-- No direct experimental evidence of isolated quarks  
-  - **jet formation** in high-energy collisions  
-  - **linear potential** at large distances ($V(r) \sim \sigma r$)
-:::
+::: {class="fragment fade-in-then-semi-out" style="position:absolute; left:-40px; top:308px;"}
+<img src="strong-sheep.png" style="width:25%; margin:auto; display:block;"/>
 :::
 
-::: {.column width="40%"}
-<img src="lattice-potential-removebg-preview.png" class="fragment" style="width:85%; margin:auto; display:block;"/>
-:::
 
-::::
-
-::: {.callout type='default' class="fragment" style="margin-top:-40px; width:fit-content; margin-left:200px; margin-right:200px; margin-bottom:50px;"}
+::: {.callout type='default' class="fragment" style="margin-top:130px; width:fit-content; margin-left:20px; margin-right:20px; margin-bottom:50px;"}
 ## Particle Data Group
 <img src="pdg.png" class="fragment" style="width:100%; margin-left:0px; margin-right:0px;  margin-top:-10px; display:block;"/>
 :::
 
+:::
 
+::: {.column width="40%"}
+<img src="lattice-potential-removebg-preview.png" class="fragment" style="width:100%; margin-top:-60px; display:block;"/>
 
-::: {class="fragment" style="margin-top:10px; font-style:italic; color:gray; text-align:center;"}
-**Take-home:** Confinement is a genuinely **non-perturbative feature** of QCD,  
-responsible for the hadronic spectrum and absence of free quarks.
 :::
 
 
 
 
+::::
 
 
+
+
+
+
+
+## QCD at Low Energies
+
+::: {class="fragment"}
+- For $\mu \sim \Lambda_{\text{QCD}}$:  
+  - $\alpha_s(\mu)$ is large  
+  - Perturbation theory breaks down
+:::
+
+::: {class="fragment"}
+- Physics is dominated by **non-perturbative phenomena**:  
+  - Confinement  
+  - Mass gap  
+  - Hadron spectrum & structure
+:::
+
+::: {class="fragment"}
+- Need **non-perturbative tools**:
+  - **Lattice QCD** (first-principles numerical approach)  
+  - **Effective Field Theories** (low-energy approximations)
+:::
+
+
+## Lattice QCD
+
+:::: {.columns}
+
+::: {.column width="65%"}
+
+::: {class="fragment" data-fragment-index="1" style="margin-top:-8px;"}
+- **Euclidean formulation**:  
+  Discretize space-time as a **4D grid**
+:::
+
+::: {class="fragment" data-fragment-index="2" style="margin-top:-8px;"}
+- Introduces two natural **cutoffs**:  
+  - <span style="background: linear-gradient(to right, #68a0f9ff, #1e3a8a); 
+               -webkit-background-clip: text; color: transparent;">
+    **UV**
+    </span>: lattice spacing $a$  
+  - <span style="background: linear-gradient(to right, #ef8644ff, #d70d0dff); 
+               -webkit-background-clip: text; color: transparent;">
+    **IR**
+    </span>: finite volume $L^4$
+:::
+
+::: {class="fragment" data-fragment-index="3" style="margin-top:-8px;"}
+- **Fields on the lattice**:  
+  - Quarks: $\;\psi(x) \;\;\to\;\; a^{-3/2}\psi(n)$ (sites)  
+  - Gauge fields: $\;A_\mu(x) \;\;\to\;\; U_\mu(n) \in \mathrm{SU}(3)$ (links)
+:::
+
+::: {class="fragment" style="margin-top:-8px;"}
+- Gauge links act as **parallel transporters**  
+:::
+
+::: {class="fragment" style="margin-top:-8px;"}
+- **Boundary conditions**:  
+  - Periodic (PBC) for gauge fields  
+  - Anti-periodic (APBC) for fermions
+:::
+
+:::
+
+::: {.column width="35%"}
+<div style="position:relative; width:100%; height:400px; margin-top:30px;">
+
+  <img src="lettuce_first.svg" 
+       class="fragment" data-fragment-index="1"
+       style="position:absolute; top:0; left:50%; transform:translateX(-50%) scale(2.6); width:100%;"/>
+
+  <img src="lettuce_second.svg" 
+       class="fragment" data-fragment-index="4"
+       style="position:absolute; top:0; left:50%; transform:translateX(-50%) scale(2.6); width:100%;"/>
+
+  <img src="lettuce_third.svg" 
+       class="fragment" data-fragment-index="4"
+       style="position:absolute; top:0; left:50%; transform:translateX(-50%) scale(2.6); width:100%;"/>
+  <img src="lettuce_fourth.svg" 
+       class="fragment" data-fragment-index="5"
+       style="position:absolute; top:0; left:50%; transform:translateX(-50%) scale(2.6); width:100%;"/>
+  <img src="lettuce_five.svg" 
+       class="fragment" data-fragment-index="5"
+       style="position:absolute; top:0; left:50%; transform:translateX(-50%) scale(2.6); width:100%;"/>
+
+</div>
+
+:::
+
+:::: 
+
+::: {class="fragment" style="margin-top:-30px; font-style:italic; color:gray; text-align:center;"}
+**Take-home:**  
+With cutoffs and discretization, QCD becomes a theory with **dimensionless variables** →  
+can be solved numerically using **Monte Carlo techniques**.
+:::
 
 ## Testo su Due Colonne
 
