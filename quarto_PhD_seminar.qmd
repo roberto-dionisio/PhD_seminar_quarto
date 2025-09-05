@@ -776,170 +776,100 @@ With cutoffs and discretization, QCD becomes a theory with **dimensionless varia
 can be solved numerically using **Monte Carlo techniques**.
 :::
 
-## Testo su Due Colonne
+## Monte Carlo methods {auto-animate=true}
 
-::: columns
-::: {.column width="50%"}
-- Colonna 1: Contenuto lungo che occupa metà della slide.
-- Puoi aggiungere elenchi, paragrafi o immagini.
-:::
 
-::: {.column width="50%"}
-- Colonna 2: Contenuto diverso o complementare.
-- Anche qui puoi aggiungere qualsiasi tipo di contenuto.
-:::
-:::
-::: {.reveal-html}
-<div style="text-align:center">
+<div style="margin-top:-20px;">
+$$
+\langle \mathcal{O}\rangle
+= \frac{1}{Z}\int [dU]\textcolor{blue}{[d\bar\psi d\psi]}\,\mathcal{O}\, e^{-S_G[U]-\textcolor{blue}{\bar\psi} D[U]\textcolor{blue}{\psi}}
+= \frac{1}{Z}\int [dU]\,\mathcal{O}_F[U]\,\textcolor{blue}{\det D[U]}\,e^{-S_G[U]}
+$$
+</div>
 
-<svg width="350" height="350">
-  <!-- Reticolo -->
-  <g class="fragment" stroke="black" stroke-width="1">
-    <line x1="50" y1="50" x2="250" y2="50"/>
-    <line x1="50" y1="100" x2="250" y2="100"/>
-    <line x1="50" y1="150" x2="250" y2="150"/>
-    <line x1="50" y1="200" x2="250" y2="200"/>
-    <line x1="50" y1="250" x2="250" y2="250"/>
-    <line x1="50" y1="50" x2="50" y2="250"/>
-    <line x1="100" y1="50" x2="100" y2="250"/>
-    <line x1="150" y1="50" x2="150" y2="250"/>
-    <line x1="200" y1="50" x2="200" y2="250"/>
-    <line x1="250" y1="50" x2="250" y2="250"/>
-  </g>
-</svg>
 
+
+
+:::: {.columns}
+
+::: {.column width="70%"}
+
+::: {class="fragment" data-fragment-index="1" style="margin-top:-20px; margin-bottom:-30px;"} 
+1. **Importance sampling**
+Draw gauge configurations $\small \left\{ U_\mu^{(i)} \right\}$ from:
+<div style="margin-top:-10px;">
+$$
+\mathcal{P}[U]\propto e^{-S_G[U]}\,\det D[U]
+$$
 </div>
 :::
-## Components
 
-### Alert and Example Inline style
-
-To emphasize specific words or text, you can:
-
-- Use the default `.alert` class, e.g. [important note]{.alert}.
-- Use the default `.example` class e.g. [For example, look at this text]{.example}
-
-## Components
-
-### Custom Inline Color Attributes
-
-- Use inline `color` and `bg` attribute for custom color and background color, 
-    - `[colored text]{color="#2a74f5"}` produce [colored text]{color="#2a74f5"}
-    - `[text with background color]{bg="#f5e347"}` produce [text with background color]{bg="#f5e347"}
-    - `[colored text with background]{color="#2a74f5" bg="#f5e347"}` produce [colored text]{color="#2a74f5" bg="#f5e347"}
-- [Note that, when using inline attributes, DO NOT PUT SPACE on either side of equal (`=`) sign, that, write like `color="#2a74f5"`, instead of `color = "#2a74f5"`]{.alert}
-
-## Components
-
-### Blockquotes
-
-> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel rhoncus ante. Donec vitae euismod nibh. In ultrices vestibulum erat, non maximus orci elementum in. Ut eget erat et felis consequat volutpat. Donec ac iaculis justo. Phasellus vitae mi tempor leo scelerisque consequat sed at nibh.
-
-## Components
-
-### Citations
-
-
-
-# Callout Blocks
-
-## Custom Blocks
-
-There are three custom blocks that you can use. Create them using `.callout` class in a div (`:::`) and specify the type.
-
-- For default block, use `type='default'`
-
-- For alert block, use `type='alert'`
-
-- For example block, use `type='example'`
-
-## Default block
-
-```{.markdown}
-::: {.callout type='default'}
-## Default block
-
-This is a default block
-:::
-```
-
-renders to,
-
-::: {.callout type='default'}
-## Default block
-
-This is a default block
+::: {class="fragment" style="margin-top:-10px;"}
+2. $\small \forall i$ compute **fermionic observable**
+$\langle\mathcal{O}\rangle_F[U^{(i)}]$
 :::
 
-## Alert Block
-
-```{.markdown}
-::: {.callout type='alert'}
-## Alert Block
-
-This is a alert block
+::: {class="fragment" style="margin-top:-10px; margin-bottom:-20px;"}
+3. Ensemble average (**estimator**)
+<div style="margin-top:-10px;">
+$$
+\overline{\mathcal{O}} \;=\; \frac{1}{N}\sum_{i=1}^N \langle\mathcal{O}\rangle_F[U^{(i)}]
+\;=\; \langle\mathcal{O}\rangle \;+\; \delta\mathcal{O}
+$$
+</div>
 :::
-```
 
-renders to, 
+::: {class="fragment" style="margin-top:-30px;"}
+4. Set the **physical scale** $\small a$ (e.g. hadron masses)
+:::
 
-::: {.callout type='alert'}
-## Alert Block
-
-This is a alert block
+::: {class="fragment" style="margin-top:-10px;"}
+5. **Continuum / infinite-volume limits**:
+<div style="margin-top:-10px;">    
+  - Remove the <span style="background: linear-gradient(to right, #68a0f9ff, #1e3a8a); 
+               -webkit-background-clip: text; color: transparent;">
+    **UV**
+    </span>($\small a \to 0$) and <span style="background: linear-gradient(to right, #ef8644ff, #d70d0dff); 
+               -webkit-background-clip: text; color: transparent;">
+    **IR**
+    </span>($\small L \to \infty$) cut-off
+  - (if needed) **chiral extrapolation** $\small m_q\to m_q^{\rm phys}$
+</div>
 :::
 
 
-## Example Block
-
-```{.markdown}
-::: {.callout type='example'}
-## Example Block
-
-This is a example block
-:::
-```
-
-renders to,
-
-::: {.callout type='example'}
-## Example Block
-
-This is a example block
 :::
 
+::: {.column width="30%"}
+<img src="markov_chain.png" class="fragment zoom-in" data-fragment-index="1" style="width:100%; margin-top:20px; display:block; transform: scale(1.6);"/>
+<!--
 
+::: {.fragment"}
 
-## Tables
+- <span style="color: #2e7d32;"><u>Pros</u>:</span>  
+  - Ab-initio computations ✅  
+  - Non-Perturbative tool ✅  
+  - Precision can be systematically improved ✅  
+- <span style="color: #c62828;"><u>Cons</u>:</span>  
+  - Need HPC resources ❌  
+  - Euclidean spacetime ❌  
+  - Challenges in discretizing dynamical quarks ❌  
 
-| fruit  | price  |
-|--------|--------|
-| apple  | 2.05   |
-| pear   | 1.37   |
-| orange | 3.09   |
-
-: Fruit prices {#tbl-markdown tbl-colwidths="[75,25]"}
-
-@tbl-markdown is created using markdown.
-
-## Tables
-
-```{r}
-#| label: tbl-co2
-#| tbl-cap: Carbon Dioxide Uptake in Grass Plants (Data from R)
-knitr::kable(head(CO2))
-```
-
-For details of @tbl-co2, check by running `?CO2` in R console.
-
-## Images
-
-![Random Image from Picsum](images/picsum.png)
-
-## References
-
-::: {#refs}
 :::
+
+-->
+:::
+
+
+::::
+
+
+
+---
+
+
+
+ 
 
 <script>
 const waitForReveal = setInterval(() => {
