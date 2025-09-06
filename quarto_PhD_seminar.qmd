@@ -32,142 +32,9 @@ header-includes:
     </script>
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 ---
-## The Standard Model
-
-::: {class="fragment" style="font-size:1.4em; font-weight:300; margin-top:40px;"}
-The most successful theory (so far) of **fundamental interactions**
-:::
-
-::: {class="fragment" style="font-size:1.1em; margin-top:30px;"}
-**Gauge principle:** <br>
-Interactions arise by requiring invariance under local symmetry transformations.
-:::
-
-:::{.r-hstack style="align-items: center; justify-content:flex-start; gap:180px;"}
-
-::: {class="fragment" style="font-size:1.1em; margin-top:10px; text-align:left"}
-- **Electromagnetic** → $\mathrm{U}(1)_{\text{em}}$ <br> <span style="font-size:0.8em; color:gray;">acts on charged particles </span>
-- **Weak** → $\mathrm{SU}(2)_L$ <br><span style="font-size:0.8em; color:gray;"> responsable of radioactive decays </span>
-- **Strong** →  $\mathrm{SU}(3)_C$<br><span style="font-size:0.8em; color:gray;">binds quarks inside hadrons </span>  
-
-:::
-
-::: {class="fragment" style="font-size:1.1em; margin-top:10px; text-align: center"}
-$$\mathcal{L}_{\text{SM}} \;=\; \mathcal{L}_{\text{gauge}} + \mathcal{L}_{\text{matter}} + \mathcal{L}_{\text{Higgs}}$$
-:::
-:::
-
-::: {class="fragment" style="font-size:1.1em; font-style:italic; color:gray; margin-top:40px; margin-right:70px; text-align: right; "}
-Gravity unfortunately is not included in the Standard Model.
-:::
-
-
-## The Strong Interaction {auto-animate=true auto-animate-easing="ease"}
 
 
 
-::: {class="fragment" data-fragment-index="1" style="position:absolute; left:230px; top:60px;  justify-content:center; font-size:1.3em; font-weight:400;"}
-Matter content:
-:::
-
-
-::: {.r-vstack}
-::: {.r-hstack}
-
-::: {data-id="up" class="fragment zoom-in" data-fragment-index="2" style="position:absolute; left:50px; top:100px; background:#d72638; width:160px; height:160px; border-radius:50%; display:flex; align-items:center; justify-content:center; color:white; font-weight:450; text-align:center;"}
-u<br>(Up)<br> <span style="font-size:0.7em;"> $m_u \simeq 2 \mathrm{~MeV}$</span>
-:::
-
-::: {data-id="down" class="fragment zoom-in"data-fragment-index="2" style="position:absolute; left:250px; top:100px; background:#3f88c5; width:160px; height:160px; border-radius:50%; display:flex; align-items:center; justify-content:center; color:white; font-weight:450; text-align:center;"}
-d<br>(Down)<span style="font-size:0.7em;"> $m_u \simeq 2 \mathrm{~MeV}$</span>
-:::
-
-::: {data-id="strange" class="fragment zoom-in" data-fragment-index="2"style="position:absolute; left:450px; top:100px; background:#f49d37; width:160px; height:160px; border-radius:50%; display:flex; align-items:center; justify-content:center; color:white; font-weight:450; text-align:center;"}
-s<br>(Strange)<span style="font-size:0.7em;"> $m_u \simeq 2 \mathrm{~MeV}$</span>
-:::
-
-:::
-
-::: {.r-hstack}
-
-::: {data-id="charm" class="fragment zoom-in" data-fragment-index="3" style="position:absolute; left:50px; top:300px; background:#8ac926; width:160px; height:160px; border-radius:50%; display:flex; align-items:center; justify-content:center; color:white; font-weight:450; text-align:center;"}
-c<br>(Charm)<span style="font-size:0.7em;"> $m_u \simeq 2 \mathrm{~MeV}$</span>
-:::
-
-::: {data-id="bottom" class="fragment zoom-in" data-fragment-index="3" style="position:absolute; left:250px; top:300px; background:#6a4c93; width:160px; height:160px; border-radius:50%; display:flex; align-items:center; justify-content:center; color:white; font-weight:450; text-align:center;"}
-b<br>(Bottom)<span style="font-size:0.7em;"> $m_u \simeq 2 \mathrm{~MeV}$</span>
-:::
-
-::: {data-id="top" class="fragment zoom-in" data-fragment-index="3" style="position:absolute; left:450px; top:300px; background:#ff7b00; width:160px; height:160px; border-radius:50%; display:flex; align-items:center; justify-content:center; color:white; font-weight:450; text-align:center;"}
-t<br>(Top)<span style="font-size:0.7em;"> $m_u \simeq 2 \mathrm{~MeV}$</span>
-:::
-
-:::
-::: {class="fragment"  style="position:absolute; right:60px; top:110px;  justify-content:center; font-size:1.3em; font-weight:300;"}
-Force carriers:
-:::
-::: {data-id="gluons" class="fragment zoom-in" style="position:absolute; right:50px; top:180px; background:#000000; width:200px; height:200px; border-radius:50%; display:flex; align-items:center; justify-content:center; color:white; font-weight:500; text-align:center;"}
-8 Gluons
-:::
-
-:::
-
-## The Strong Interaction {auto-animate=true auto-animate-easing="ease"}
-
-::: {.r-vstack}
-
-::: {data-id="up" style="position:absolute; left:250px; top:120px; background:#d72638; width:160px; height:160px; border-radius:50%; display:flex; align-items:center; justify-content:center; color:white; font-weight:450; text-align:center;"}
-u <br> <span style="font-size:0.7em;"> $m_u \simeq 2 \mathrm{~MeV}$</span>
-:::
-
-::: {data-id="down" style="position:absolute; right:250px; top:120px; background:#3f88c5; width:160px; height:160px; border-radius:50%; display:flex; align-items:center; justify-content:center; color:white; font-weight:450; text-align:center;"}
-d <br> <span style="font-size:0.7em;"> $m_d \simeq 2 \mathrm{~MeV}$</span>
-:::
-
-::: {data-id="gluons" style="position:absolute; top:360px; background:#000000; width:200px; height:200px; border-radius:50%; display:flex; align-items:center; justify-content:center; color:white; font-weight:500;"}
-8 Gluons
-:::
-
-:::
-
-
-## The Strong Interaction {auto-animate=true auto-animate-easing="ease-out" auto-animate-duration=0.6}
-
-<div style="display:flex; justify-content:center;">
-
-::: {data-id="proton" style="position:absolute; left:350px; top:180px; width:320px; height:320px; border-radius:50%; background:rgba(215,38,56,0.85); border:2px solid black;display:flex; align-items:center; justify-content:center; color:white; font-weight:600; text-align:center;z-index:2;"}
-Proton <br> (uud)
-:::
-
-::: {data-id="up" style="position:absolute; left:350px; top:180px; width:320px; height:320px; border-radius:50%; background:rgba(250, 250, 250, 0); border:0px solid black; display:flex; align-items:center; justify-content:center; color: background:rgba(250, 250, 250, 0); font-weight:600; text-align:center; z-index:-1;"}
-:::
-
-::: {data-id="down" style="position:absolute; left:350px; top:180px; width:320px; height:320px; border-radius:50%; background:rgba(250, 250, 250, 0); border:0px solid black; display:flex; align-items:center; justify-content:center; color: background:rgba(250, 250, 250, 0); font-weight:600; text-align:center;z-index:-1;"}
-:::
-
-::: {data-id="gluons" style="position:absolute; left:350px; top:180px; width:320px; height:320px; border-radius:50%; background:rgba(250, 250, 250, 0); border:0px solid black; display:flex; align-items:center; justify-content:center; color: background:rgba(250, 250, 250, 0); font-weight:600; text-align:center;z-index:-1;"}
-:::
-
-
-</div>
-
-## The Strong Interaction {auto-animate=true auto-animate-easing="ease-in" auto-animate-duration=.6}
-
-<div style="display:flex; justify-content:center;">
-
-<!-- Protone (rimane lo stesso oggetto della slide precedente) -->
-::: {data-id="proton" style="position:absolute; left:250px; top:180px; width:280px; height:280px; border-radius:50%; background:rgba(215,38,56,0.85); border:2px solid black; display:flex; align-items:center; justify-content:center; color:white; font-weight:600; text-align:center;"}
-Proton <br> (uud)
-:::
-
-<!-- Nuovo neutrone -->
-::: {data-id="neutron" style="position:absolute; left:550px; top:180px; width:280px; height:280px; border-radius:50%; background:rgba(63,136,197,0.85); border:2px solid black; display:flex; align-items:center; justify-content:center; color:white; font-weight:600; text-align:center;"}
-Neutron <br> (udd)
-:::
-
-</div>
-
----
 
 ## Why I choose Lattice QCD {auto-animate=true auto-animate-easing="ease-out"}
 
@@ -247,12 +114,154 @@ HPC
 <img src="lattice3d.svg" style="width:100%; height:auto; max-width:none; ">
 </div>
 
-## QCD in the Continuum {auto-animate=true auto-animate-easing="ease-in-ease-out" auto-animate-duration=1}
-<div data-id="lag" style="margin-top:-30px;">
-$$\mathcal{L}_{\mathrm{QCD}} =\mathcal{L}_{\mathrm{gauge}}+\mathcal{L}_{\mathrm{matter}}$$
+
+
+
+## The Standard Model
+
+::: {class="fragment" style="font-size:1.4em; font-weight:300; margin-top:40px;"}
+The most successful theory of **fundamental interactions** (so far)
+:::
+
+::: {class="fragment" style="font-size:1.1em; margin-top:30px;"}
+**Gauge principle:** <br>
+Interactions arise by requiring invariance under local symmetry transformations.
+:::
+
+:::{.r-hstack style="align-items: center; justify-content:flex-start; gap:180px;"}
+
+::: {class="fragment" style="font-size:1.1em; margin-top:10px; text-align:left"}
+- **Electromagnetic** → $\mathrm{U}(1)_{\text{em}}$ <br> <span style="font-size:0.8em; color:gray;">acts on charged particles </span>
+- **Weak** → $\mathrm{SU}(2)_L$ <br><span style="font-size:0.8em; color:gray;"> responsable of radioactive decays </span>
+- **Strong** →  $\mathrm{SU}(3)_C$<br><span style="font-size:0.8em; color:gray;">binds quarks inside hadrons </span>  
+
+:::
+
+::: {class="fragment" style="font-size:1.1em; margin-top:10px; text-align: center"}
+$$\mathcal{L}_{\text{SM}} \;=\; \mathcal{L}_{\text{gauge}} + \mathcal{L}_{\text{matter}} + \mathcal{L}_{\text{Higgs}}$$
+:::
+:::
+
+::: {class="fragment" style="font-size:1.1em; font-style:italic; color:gray; margin-top:40px; margin-right:70px; text-align: right; "}
+Gravity unfortunately is not included in the Standard Model.
+:::
+
+
+## The Strong Interaction {auto-animate=true auto-animate-easing="ease"}
+
+
+
+::: {class="fragment" data-fragment-index="1" style="position:absolute; left:230px; top:60px;  justify-content:center; font-size:1.3em; font-weight:400;"}
+Matter content:
+:::
+
+
+::: {.r-vstack}
+::: {.r-hstack}
+
+::: {data-id="up" class="fragment zoom-in" data-fragment-index="2" style="position:absolute; left:50px; top:140px; background:#d72638; width:160px; height:160px; border-radius:50%; display:flex; align-items:center; justify-content:center; color:white; font-weight:450; text-align:center;"}
+u<br>(Up)<br> <span style="font-size:0.7em;"> $m_u \simeq 2 \mathrm{~MeV}$</span>
+:::
+
+::: {data-id="down" class="fragment zoom-in"data-fragment-index="2" style="position:absolute; left:250px; top:140px; background:#3f88c5; width:160px; height:160px; border-radius:50%; display:flex; align-items:center; justify-content:center; color:white; font-weight:450; text-align:center;"}
+d<br>(Down)<span style="font-size:0.7em;"> $m_u \simeq 2 \mathrm{~MeV}$</span>
+:::
+
+::: {data-id="strange" class="fragment zoom-in" data-fragment-index="2"style="position:absolute; left:450px; top:140px; background:#f49d37; width:160px; height:160px; border-radius:50%; display:flex; align-items:center; justify-content:center; color:white; font-weight:450; text-align:center;"}
+s<br>(Strange)<span style="font-size:0.7em;"> $m_u \simeq 2 \mathrm{~MeV}$</span>
+:::
+
+:::
+
+::: {.r-hstack}
+
+::: {data-id="charm" class="fragment zoom-in" data-fragment-index="3" style="position:absolute; left:50px; top:340px; background:#8ac926; width:160px; height:160px; border-radius:50%; display:flex; align-items:center; justify-content:center; color:white; font-weight:450; text-align:center;"}
+c<br>(Charm)<span style="font-size:0.7em;"> $m_u \simeq 2 \mathrm{~MeV}$</span>
+:::
+
+::: {data-id="bottom" class="fragment zoom-in" data-fragment-index="3" style="position:absolute; left:250px; top:340px; background:#6a4c93; width:160px; height:160px; border-radius:50%; display:flex; align-items:center; justify-content:center; color:white; font-weight:450; text-align:center;"}
+b<br>(Bottom)<span style="font-size:0.7em;"> $m_u \simeq 2 \mathrm{~MeV}$</span>
+:::
+
+::: {data-id="top" class="fragment zoom-in" data-fragment-index="3" style="position:absolute; left:450px; top:340px; background:#ff7b00; width:160px; height:160px; border-radius:50%; display:flex; align-items:center; justify-content:center; color:white; font-weight:450; text-align:center;"}
+t<br>(Top)<span style="font-size:0.7em;"> $m_u \simeq 2 \mathrm{~MeV}$</span>
+:::
+
+:::
+::: {class="fragment"  style="position:absolute; right:60px; top:140px;  justify-content:center; font-size:1.3em; font-weight:400;"}
+Force carriers:
+:::
+::: {data-id="gluons" class="fragment zoom-in" 
+     style="position:absolute; right:50px; top:220px; 
+            width:200px; height:200px; border-radius:50%; 
+            display:flex; align-items:center; justify-content:center; 
+            color:white; font-weight:500; text-align:center;
+            background: radial-gradient(circle at center, #ff2f00ff, #ff9900ff , #07bb07ff, #0aa6e4ff, #1e00ffff, #1604a0ff);"}
+8 Gluons
+:::
+
+:::
+
+## The Strong Interaction {auto-animate=true auto-animate-easing="ease"}
+
+::: {.r-vstack}
+
+::: {data-id="up" style="position:absolute; left:250px; top:120px; background:#d72638; width:160px; height:160px; border-radius:50%; display:flex; align-items:center; justify-content:center; color:white; font-weight:450; text-align:center;"}
+u <br> <span style="font-size:0.7em;"> $m_u \simeq 2 \mathrm{~MeV}$</span>
+:::
+
+::: {data-id="down" style="position:absolute; right:250px; top:120px; background:#3f88c5; width:160px; height:160px; border-radius:50%; display:flex; align-items:center; justify-content:center; color:white; font-weight:450; text-align:center;"}
+d <br> <span style="font-size:0.7em;"> $m_d \simeq 2 \mathrm{~MeV}$</span>
+:::
+
+::: {data-id="gluons" style="position:absolute; top:360px; background:#000000; width:200px; height:200px; border-radius:50%; display:flex; align-items:center; justify-content:center; 
+            color:white; font-weight:500; text-align:center;
+            background: radial-gradient(circle at center, #ff2f00ff, #ff9900ff , #07bb07ff, #0aa6e4ff, #1e00ffff, #1604a0ff);"}
+8 Gluons
+:::
+
+:::
+
+
+## The Strong Interaction {auto-animate=true auto-animate-easing="ease-out" auto-animate-duration=0.6}
+
+<div style="display:flex; justify-content:center;">
+
+::: {data-id="proton" style="position:absolute; left:350px; top:180px; width:320px; height:320px; border-radius:50%; background:rgba(215,38,56,0.85); border:2px solid black;display:flex; align-items:center; justify-content:center; color:white; font-weight:600; text-align:center;z-index:2;"}
+Proton <br> (uud)
+:::
+
+::: {data-id="up" style="position:absolute; left:350px; top:180px; width:320px; height:320px; border-radius:50%; background:rgba(250, 250, 250, 0); border:0px solid black; display:flex; align-items:center; justify-content:center; color: background:rgba(250, 250, 250, 0); font-weight:600; text-align:center; z-index:-1;"}
+:::
+
+::: {data-id="down" style="position:absolute; left:350px; top:180px; width:320px; height:320px; border-radius:50%; background:rgba(250, 250, 250, 0); border:0px solid black; display:flex; align-items:center; justify-content:center; color: background:rgba(250, 250, 250, 0); font-weight:600; text-align:center;z-index:-1;"}
+:::
+
+::: {data-id="gluons" style="position:absolute; left:350px; top:180px; width:320px; height:320px; border-radius:50%; background:rgba(250, 250, 250, 0); border:0px solid black; display:flex; align-items:center; justify-content:center; color: background:rgba(250, 250, 250, 0); font-weight:600; text-align:center;z-index:-1;"}
+:::
+
+
 </div>
 
-## QCD in the Continuum {auto-animate=true auto-animate-easing="ease-in-ease-out" auto-animate-duration=1}
+## The Strong Interaction {auto-animate=true auto-animate-easing="ease-in" auto-animate-duration=.6}
+
+<div style="display:flex; justify-content:center;">
+
+<!-- Protone (rimane lo stesso oggetto della slide precedente) -->
+::: {data-id="proton" style="position:absolute; left:250px; top:180px; width:280px; height:280px; border-radius:50%; background:rgba(215,38,56,0.85); border:2px solid black; display:flex; align-items:center; justify-content:center; color:white; font-weight:600; text-align:center;"}
+Proton <br> (uud)
+:::
+
+<!-- Nuovo neutrone -->
+::: {data-id="neutron" style="position:absolute; left:550px; top:180px; width:280px; height:280px; border-radius:50%; background:rgba(63,136,197,0.85); border:2px solid black; display:flex; align-items:center; justify-content:center; color:white; font-weight:600; text-align:center;"}
+Neutron <br> (udd)
+:::
+
+</div>
+
+---
+
+## QCD in the Continuum 
 
 <div data-id="lag" style="margin-top:-30px;">
 $$\mathcal{L}_{\mathrm{QCD}} =-\tfrac{1}{2}\mathrm{Tr}\left[ F_{\mu\nu} F^{\mu\nu}\right]+\sum_{f=1}^{N_f} \bar{\psi}_f \big( i \gamma^\mu D_\mu - m_f \big) \psi_f$$
@@ -326,7 +335,7 @@ confinement, glueballs, non-linear self-interactions...
 :::
 
 
-## QCD in the Continuum {auto-animate=true auto-animate-easing="ease-in" auto-animate-duration=0.0}
+## QCD in the Continuum 
 
 <div data-id="lag" style="margin-top:-30px;">
 $$\mathcal{L}_{\mathrm{QCD}} =
@@ -383,97 +392,6 @@ Quarks are never observed as free particles
 
 ::::
 
-## Chiral Limit in QCD {auto-animate=true}
-
-::: {class="fragment"}
- **Chiral Transformations**:
- <div style="margin-top:-20px;">  
-  $$\psi \;\longrightarrow\;
-  e^{\,i \alpha \gamma_5/2}\, \psi;\quad \quad \bar{\psi} \;\longrightarrow\; \bar{\psi}\,
-  e^{\,i \alpha \gamma_5/2}$$
-</div>
-
- in the $\small m_f \to 0$ is a symmetry of the Lagrangian
-
-
-:::
-
-:::: {.columns}
-
-::: {.column width="50%" style="margin-top:0px;"}
-
-::: {class="fragment"}
-- **Left / Right modes**:  
-  $$
-  \psi_L = P_L \psi, \quad \psi_R = P_R \psi
-  $$
-  with $P_{L,R} = \frac{1\mp\gamma_5}{2}$
-:::
-
-:::
-::: {.column width="50%" style="margin-top:0px;"}
-
-::: {class="fragment" style="margin-top:-24px;"}
-
-- $$
-  \bar{\psi}\, i\gamma^\mu D_\mu \psi 
-  = \bar{\psi}_\textcolor{red}{\small L} i\gamma^\mu D_\mu \psi_\textcolor{red}{\small L}
-   + \bar{\psi}_\textcolor{blue}{\small R} i\gamma^\mu D_\mu \psi_\textcolor{blue}{\small R}
-  $$
-<div style="margin-top:-20px;">
-  → does **not mix** chirality
-  </div>
-
-:::
-
-::: {class="fragment" style="margin-top:-30px;" }
-- 
-$$
-   \,\bar{\psi}m\psi = 
-\bar{\psi}_\textcolor{red}{\small L} m \psi_\textcolor{blue}{\small R} + \bar{\psi}_\textcolor{blue}{\small R} m \psi_\textcolor{red}{\small L}
-  $$
-<div style="margin-top:-20px;">
-  → explicitly **couples** $\textcolor{red}{\small L}$ and $\textcolor{blue}{\small R}$
-</div>
-
-:::
-:::
-
-::::
-
-::: {class="fragment" style="margin-top:20px;"}
-
-- **Chiral limit**: $\small m_u = m_d = 0$ &Rightarrow;  $\small \mathrm{SU}(2)_V \times \mathrm{SU}(2)_A \times \mathrm{U}(1)_V$ is a **global symmetry**:
-  - QCD spectrum **does not show parity doubling**.
-
-:::
-
-## Chiral symmetry breaking in real QCD
-
-
-:::: {.columns}
-
-::: {.column width="50%" style="margin-top:30px;"}
-::: {class="fragment" style="margin-top:-20px;"}
-1. **Spontaneous breaking**  
-   - $\small \langle \bar{\psi}\psi \rangle \neq 0$ (non-trivial QCD vacuum)  
-   - $\small \mathrm{SU}(2)_V \times \mathrm{SU}(2)_A \times \mathrm{U}(1)_V 
-      \;\;\longrightarrow\;\; \mathrm{SU}(2)_V \times \mathrm{U}(1)_V$  
-   - 3 Nambu–Goldstone bosons &Rightarrow; the **pions**
-
-2. **Explicit breaking**  
-   - light quark masses $\small m_{u,d} \neq 0$
-   - GMOR: $\small{ M_{\pi}^2 = (m_u + m_d)}\frac{\large \langle \bar{\psi}\psi \rangle}{\large f_{\pi}^2} \simeq 135 \mathrm{\, MeV}$
-
-:::
-:::
-
-::: {.column width="50%" style="margin-top:20px;"}
-<img src="cool-2.png" class="fragment fade-in-then-semi-out" data-fragment-index="1" style="width:100%; margin-top:-80px; margin-left:60px;" />
-
-:::
-
-::::
 
 
 ## Interactions in QCD
@@ -577,8 +495,7 @@ Quantum corrections lead to divergencies:
 <div style=" width: 90vw; padding-top: 66.67%;position: absolute; top:10%; left:40%; text-align: center; overflow: hidden; transform: scale(.5); transform-origin: top left;">
   <img src="axes.svg" class="fragment" style="position:absolute; top:0; left:50%; transform:translateX(-50%); width:80%; height:auto;  object-fit: contain;">
   <img src="ax_curve.svg" class="fragment" style="position:absolute; top:0; left:50%; transform:translateX(-50%); width:80%; height:auto;  object-fit: contain;">
-  <img src="points.svg" class="fragment zoom-in" style="position:absolute; top:2%; left:58%; transform:translateX(-50%); width:80%; height:auto;  object-fit: contain; margin: auto;">
-  <img src="points_legend.svg" class="fragment zoom-in" style="position:absolute; top:2%; left:58%; transform:translateX(-50%); width:80%; height:auto; object-fit: contain; margin: auto;">
+  <img src="points_legend.svg" class="fragment zoom-in" style="position:absolute; top:1%; left:56%; transform:translateX(-50%); width:80%; height:auto; object-fit: contain; margin: auto;">
 </div>
 
 :::
@@ -646,6 +563,7 @@ QCD becomes strongly coupled in the IR → [**non-perturbative tools**]{style="c
 <img src="strong-car.png" style="width:25%; margin:auto; display:block;"/>
 :::
 
+
 ::: {class="fragment" style="margin-top:-40px; margin-left:25px;"}
 <div style="margin-top:-20px; text-align:left;">   
 $\small |dV/dr|_{\mathrm{QED}} \approx 2.3 \cdot 10^{2} \ \mathrm{N}$
@@ -682,25 +600,36 @@ $\small |dV/dr|_{\mathrm{QED}} \approx 2.3 \cdot 10^{2} \ \mathrm{N}$
 
 ## QCD at Low Energies
 
-::: {class="fragment"}
+:::: {.columns}
+
+::: {.column  style="margin-top:40px; width:65%;" }
+
+::: {class="fragment" data-fragment-index="1" style="margin-top:80px;}
 - For $\mu \sim \Lambda_{\text{QCD}}$:  
   - $\alpha_s(\mu)$ is large  
   - Perturbation theory breaks down
 :::
 
-::: {class="fragment"}
+::: {class="fragment" data-fragment-index="2"}
 - Physics is dominated by **non-perturbative phenomena**:  
   - Confinement  
   - Mass gap  
   - Hadron spectrum & structure
 :::
 
-::: {class="fragment"}
+::: {class="fragment" data-fragment-index="3"}
 - Need **non-perturbative tools**:
   - **Lattice QCD** (first-principles numerical approach)  
   - **Effective Field Theories** (low-energy approximations)
 :::
 
+:::
+
+::: {.column width="35%"}
+<img src="paths.png" class="fragment" data-fragment-index="3" style="width:80%; transform: scale(1.25); margin-top:50px;"/>
+:::
+
+::::
 
 ## Lattice QCD
 
@@ -770,13 +699,12 @@ $\small |dV/dr|_{\mathrm{QED}} \approx 2.3 \cdot 10^{2} \ \mathrm{N}$
 
 :::: 
 
-::: {class="fragment" style="margin-top:-30px; font-style:italic; color:gray; text-align:center;"}
-**Take-home:**  
-With cutoffs and discretization, QCD becomes a theory with **dimensionless variables** →  
-can be solved numerically using **Monte Carlo techniques**.
+::: {class="fragment" style="margin-top:-20px; margin-left:400px; font-style:italic; color:gray; text-align:right;"}
+QCD becomes a set of **dimensionless variables** <br>
+It can be solved numerically using **[Monte Carlo techniques]{style="color: #EB811B;"}**
 :::
 
-## Monte Carlo methods {auto-animate=true}
+## Monte Carlo methods
 
 
 <div style="margin-top:-20px;">
@@ -794,7 +722,7 @@ $$
 
 ::: {.column width="70%"}
 
-::: {class="fragment" data-fragment-index="1" style="margin-top:-20px; margin-bottom:-30px;"} 
+::: {class="fragment" style="margin-top:-20px; margin-bottom:-30px;"} 
 1. **Importance sampling**
 Draw gauge configurations $\small \left\{ U_\mu^{(i)} \right\}$ from:
 <div style="margin-top:-10px;">
@@ -824,7 +752,9 @@ $$
 :::
 
 ::: {class="fragment" style="margin-top:-10px;"}
+
 5. **Continuum / infinite-volume limits**:
+
 <div style="margin-top:-10px;">    
   - Remove the <span style="background: linear-gradient(to right, #68a0f9ff, #1e3a8a); 
                -webkit-background-clip: text; color: transparent;">
@@ -835,72 +765,187 @@ $$
     </span>($\small L \to \infty$) cut-off
   - (if needed) **chiral extrapolation** $\small m_q\to m_q^{\rm phys}$
 </div>
+
 :::
 
 
 :::
 
 ::: {.column width="30%"}
-<img src="markov_chain.png" class="fragment zoom-in" data-fragment-index="1" style="width:100%; margin-top:20px; display:block; transform: scale(1.6);"/>
-<!--
 
-::: {.fragment"}
+<img src="markov_chain.png" class="fragment"  style="width:100%; margin-top:20px; display:block; transform: scale(1.6);"/>
 
-- <span style="color: #2e7d32;"><u>Pros</u>:</span>  
-  - Ab-initio computations ✅  
-  - Non-Perturbative tool ✅  
-  - Precision can be systematically improved ✅  
-- <span style="color: #c62828;"><u>Cons</u>:</span>  
-  - Need HPC resources ❌  
-  - Euclidean spacetime ❌  
-  - Challenges in discretizing dynamical quarks ❌  
+::: {.fragment style="margin-top:60px;"}
+
+
+| Experiments | Lattice QCD |
+|------------|------------|
+| Accelerators (LHC) | Ensemble of configurations |
+| Detectors (CMS, ATLAS) | Fermionic observables |
 
 :::
 
--->
+
 :::
+
+
 
 
 ::::
 
 
 
----
 
 
+## Why we need strong machines?
 
+<div style="margin-top:-30px;"> 
+$$
+\text{Computational cost} \sim c \;\times\; (\# \text{confs}) \;\times\; 
+\left(\frac{1}{M_\pi}\right)^6 \;\times\; L^5 \;\times\; (a^{-1})^7
+$$
+</div>
+
+:::: {.columns}
+
+::: {.column width="60%"}
+
+::: {.fragment style="margin-top:-20px;"}
+
+- Cost grows rapidly when approaching:
+  - **physical pion masses** 
+  - **large volumes** 
+  - **fine lattice spacing** 
+
+:::
+
+::: {.fragment}
+- At the **physical point** with $L=32$:  
+  - Generating $3\times 10^3$ <br> → **$2\times 10^6$ core hours** configurations
+  - Without parallelization on a stand-alone PC <br> → **~230 years**
+:::
+
+::: {.fragment}
+- Data per configuration: $\mathcal{O}(1\text{-}50)$ GB  
+  → **Tera/Petabytes of data** generated
+:::
+
+
+:::
+
+::: {.column width="40%"}
+<img src="leo.png" class="fragment" style="width:100%; transform: scale(1.02); margin-top:-20px;"/>
+
+::: {.fragment}
+**HPC** resources provide:   
+
+  1. Hundreds of nodes with CPUs/GPUs 
+
+  2. High memory per node  
+
+  3. High network bandwidth  
  
+:::
 
-<script>
-const waitForReveal = setInterval(() => {
-  if (typeof Reveal !== 'undefined') {
-    console.log('Reveal.js is loaded');
-    clearInterval(waitForReveal);
 
-    // Evento per mostrare il frammento
-    Reveal.on('fragmentshown', function(event) {
-      if (event.fragment.dataset.fragmentIndex === "2") {
-        const span = document.querySelector('.qc-text');
-        span.classList.add('fade-to-qcd'); // Aggiunge la classe per l'animazione
-      }
-    });
 
-    // Evento per nascondere il frammento
-    Reveal.on('fragmenthidden', function(event) {
-      if (event.fragment.dataset.fragmentIndex === "2") {
-        const span = document.querySelector('.qc-text');
-        span.classList.remove('fade-to-qcd'); // Rimuove la classe per l'animazione
-        span.classList.remove('collapse-qcd'); // Rimuove la classe di collassamento
-      }
-    });
 
-    // Evento per collassare in "QCD"
-    Reveal.on('slidechanged', function(event) {
-      const span = document.querySelector('.qc-text');
-      if (event.indexh === 2) { // Cambia l'indice in base alla tua slide
-        span.classList.add('collapse-qcd'); // Aggiunge la classe di collassamento
-      }
-    });
-  }
-}, 100);
-</script>
+:::
+
+
+
+::::
+
+## Chiral Limit in QCD {auto-animate=true}
+
+::: {class="fragment"}
+ **Chiral Transformations**:
+ <div style="margin-top:-20px;">  
+  $$\psi \;\longrightarrow\;
+  e^{\,i \alpha \gamma_5/2}\, \psi;\quad \quad \bar{\psi} \;\longrightarrow\; \bar{\psi}\,
+  e^{\,i \alpha \gamma_5/2}$$
+</div>
+
+ in the $\small m_f \to 0$ is a symmetry of the Lagrangian
+
+
+:::
+
+:::: {.columns}
+
+::: {.column width="50%" style="margin-top:0px;"}
+
+::: {class="fragment"}
+- **Left / Right modes**:  
+  $$
+  \psi_L = P_L \psi, \quad \psi_R = P_R \psi
+  $$
+  with $P_{L,R} = \frac{1\mp\gamma_5}{2}$
+:::
+
+:::
+::: {.column width="50%" style="margin-top:0px;"}
+
+::: {class="fragment" style="margin-top:-24px;"}
+
+- $$
+  \bar{\psi}\, i\gamma^\mu D_\mu \psi 
+  = \bar{\psi}_\textcolor{red}{\small L} i\gamma^\mu D_\mu \psi_\textcolor{red}{\small L}
+   + \bar{\psi}_\textcolor{blue}{\small R} i\gamma^\mu D_\mu \psi_\textcolor{blue}{\small R}
+  $$
+<div style="margin-top:-20px;">
+  → does **not mix** chirality
+  </div>
+
+:::
+
+::: {class="fragment" style="margin-top:-30px;" }
+- 
+$$
+   \,\bar{\psi}m\psi = 
+\bar{\psi}_\textcolor{red}{\small L} m \psi_\textcolor{blue}{\small R} + \bar{\psi}_\textcolor{blue}{\small R} m \psi_\textcolor{red}{\small L}
+  $$
+<div style="margin-top:-20px;">
+  → explicitly **couples** $\textcolor{red}{\small L}$ and $\textcolor{blue}{\small R}$
+</div>
+
+:::
+:::
+
+::::
+
+::: {class="fragment" style="margin-top:20px;"}
+
+- **Chiral limit**: $\small m_u = m_d = 0$ &Rightarrow;  $\small \mathrm{SU}(2)_V \times \mathrm{SU}(2)_A \times \mathrm{U}(1)_V$ is a **global symmetry**:
+  - QCD spectrum **does not show parity doubling**.
+
+:::
+
+
+
+## Chiral symmetry breaking in real QCD
+
+:::: {.columns}
+
+::: {.column width="50%" style="margin-top:30px;"}
+::: {class="fragment" style="margin-top:-20px;"}
+1. **Spontaneous breaking**  
+   - $\small \langle \bar{\psi}\psi \rangle \neq 0$ (non-trivial QCD vacuum)  
+   - $\small \mathrm{SU}(2)_V \times \mathrm{SU}(2)_A \times \mathrm{U}(1)_V 
+      \;\;\longrightarrow\;\; \mathrm{SU}(2)_V \times \mathrm{U}(1)_V$  
+   - 3 Nambu–Goldstone bosons &Rightarrow; the **pions**
+
+2. **Explicit breaking**  
+   - light quark masses $\small m_{u,d} \neq 0$
+   - GMOR: $\small{ M_{\pi}^2 = (m_u + m_d)}\frac{\large \langle \bar{\psi}\psi \rangle}{\large f_{\pi}^2} \simeq 135 \mathrm{\, MeV}$
+
+:::
+:::
+
+::: {.column width="50%" style="margin-top:20px;"}
+<img src="cool-2.png" class="fragment fade-in-then-semi-out" data-fragment-index="1" style="width:100%; margin-top:-80px; margin-left:60px;" />
+
+:::
+
+::::
+
