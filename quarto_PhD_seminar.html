@@ -506,9 +506,6 @@ Quarks are never observed as free particles
 <p>Quantum corrections lead to divergencies:<br>
 Interactions are treated in the <strong>renormalization framework</strong> → <span style="color: #EB811B;"><strong>running</strong></span> of the coupling <span class="math inline">\(g(\mu)\)</span>.</p>
 </div>
-<div class="r-hstack" style="align-items:center; justify-content:center; margin-top:300px">
-<p><img src="qed-liketest-2.png" class="fragment fade-in-then-semi-out" data-fragment-index="1" style="width:20%; display:inline-block;"> <img src="gluethree-test-2.png" class="fragment zoom-in" data-fragment-index="2" style="width:20%; display:inline-block;"> <img src="gluefour-test-2.png" class="fragment zoom-in" data-fragment-index="2" style="width:20%; display:inline-block;"></p>
-</div>
 </section>
 <section id="running-of-the-coupling" class="slide level2">
 <h2>Running of the Coupling</h2>
@@ -846,85 +843,284 @@ Discretize space-time as a <strong>4D grid</strong></li>
 </div>
 </div></div>
 </section>
-<section id="chiral-limit-in-qcd" class="slide level2" data-auto-animate="true">
-<h2 data-id="quarto-animate-title">Chiral Limit in QCD</h2>
-<div class="fragment">
-<strong>Chiral Transformations</strong>:
-<div style="margin-top:-20px;">
-<p><span class="math display">\[\psi \;\longrightarrow\;
-  e^{\,i \alpha \gamma_5/2}\, \psi;\quad \quad \bar{\psi} \;\longrightarrow\; \bar{\psi}\,
-  e^{\,i \alpha \gamma_5/2}\]</span></p>
+<section id="chiral-symmetry-in-qcd" class="slide level2">
+<h2>Chiral Symmetry in QCD</h2>
+<div class="columns">
+<div class="column" style="width:55%;">
+<div class="fragment" data-fragment-index="1">
+<ul>
+<li><strong>Massless QCD Lagrangian</strong> has<br>
+<span class="math inline">\(\small \mathrm{SU}(N_f)_L \times \mathrm{SU}(N_f)_R\)</span> symmetry</li>
+</ul>
 </div>
-<p>in the <span class="math inline">\(\small m_f \to 0\)</span> is a symmetry of the Lagrangian</p>
+<div class="fragment" data-fragment-index="2">
+<ul>
+<li><strong>Exact symmetry?</strong> No!<br>
+→ We do not observe <strong>parity doubling</strong></li>
+</ul>
+</div>
+<div class="fragment" data-fragment-index="3">
+<ul>
+<li>Chiral symmetry is <strong>broken</strong>:
+<ul>
+<li><strong>Spontaneously</strong>: <span class="math inline">\(\langle \bar{\psi}\psi \rangle \neq 0\)</span><br>
+</li>
+<li><strong>Explicitly</strong>: quark masses <span class="math inline">\(m_q \neq 0\)</span></li>
+</ul></li>
+</ul>
+</div>
+<div class="fragment" data-fragment-index="4">
+<ul>
+<li>Consequence: <strong>Pseudo–Goldstone bosons</strong><br>
+→ light pions emerge</li>
+</ul>
+</div>
+<div class="fragment" data-fragment-index="5" style="margin-top:10px;">
+<ul>
+<li><strong>Gell-Mann–Oakes–Renner (GMOR) relation</strong>:
+<div style="margin-top:-15px;">
+<p><span class="math display">\[\small
+M_\pi^2  \;=\; (m_u + m_d)\frac{\langle \bar{\psi}\psi\rangle}{f_\pi^2}
+\]</span></p>
+</div></li>
+</ul>
+</div>
+</div><div class="column" style="width:45%;">
+<p><img src="cool-2.png" class="fragment" data-fragment-index="3" style="width:100%; margin-top:-30px; transform: scale(1.5)"></p>
+<div class="fragment" data-fragment-index="6">
+<strong>Why an EFT?</strong><br>
+
+<div style="margin-top:-5px;">
+<ul>
+<li>At <strong>low energies</strong>, quarks &amp; gluons are not convenient d.o.f.</li>
+<li>Relevant excitations are <strong>pions</strong></li>
+</ul>
+</div>
+</div>
+<div class="fragment" data-fragment-index="7" style="margin-top:10px;">
+<strong>How?</strong>
+<div style="margin-top:-5px;">
+<ul>
+<li>Keep underlying symmetries<br>
+</li>
+<li>Expand in <span class="math inline">\(p/\Lambda\)</span> and <span class="math inline">\(m_q\)</span><br>
+</li>
+<li>Emergence of <strong>Low Energy Constants</strong></li>
+</ul>
+</div>
+</div>
+</div></div>
+</section>
+<section id="chiral-lagrangian-lo" class="slide level2">
+<h2>Chiral Lagrangian (LO)</h2>
+<div style="text-align:center; margin-top:70px;">
+<p><span class="math display">\[
+\mathcal{L}_\mathrm{LO} \;=\;
+\frac{\textcolor{red}{f^2_\pi}}{4}\,\mathrm{Tr}\!\left[\partial_\mu U\, \partial^\mu U^\dagger\right]
+\;+\;
+\frac{\textcolor{red}{f^2_\pi} \textcolor{blue}{B}}{2}\,\mathrm{Tr}\!\left[M\,(U+U^\dagger)\right]
+\]</span></p>
 </div>
 <div class="columns">
-<div class="column" style="margin-top:0px;">
-<div class="fragment">
+<div class="column" style="width:60%;">
+<div class="fragment" style="margin-top:60px; margin-left:0px; text-align:left;">
+<p>At LO Life is easy<br>
+→ <strong>two</strong> Low-Energy Constants (LECs):</p>
+<ol type="1">
+<li><span class="math inline">\(\textcolor{red}{f}\)</span> (pion decay constant)<br>
+</li>
+<li><span class="math inline">\(\textcolor{blue}{B}\)</span> (related to quark condensate)<br>
+</li>
+</ol>
+</div>
+</div><div class="column" style="width:40%;">
+<div class="fragment" style="margin-top:300px; text-align:center; color:gray; font-style:italic;">
+<p>They must be fixed from <strong>experiments</strong> or from <strong>Lattice QCD</strong></p>
+</div>
+</div></div>
+</section>
+<section id="chiral-lagrangian-nlo" class="slide level2">
+<h2>Chiral Lagrangian (NLO)</h2>
+<p><span class="math display">\[\small
+\begin{aligned}
+\mathcal L_{\mathrm{eff}}^{\mathrm{NLO}}=&amp; \frac{\ell_{1}}{4}\left\{\mathrm{Tr}[D_{\mu}U(D^{\mu}U)^{\dagger}]\right\}^{2}+\frac{\ell_{2}}{4}\mathrm{Tr}[D_{\mu}U(D_{\nu}U)^{\dagger}]\mathrm{Tr}[D^{\mu}U(D^{\nu}U)^{\dagger}]
++\frac{\ell_{3}}{16}\left[\mathrm{Tr}(\chi U^{\dagger}+U\chi^{\dagger})\right]^{2}\\&amp;+\frac{\ell_{4}}{4}\mathrm{Tr}[D_{\mu}U(D^{\mu}\chi)^{\dagger}+D_{\mu}\chi(D^{\mu}U)^{\dagger}]+\ell_{5}\left[\mathrm{Tr}(f_{\mu\nu}^{~R}Uf_{L}^{~\mu\nu}U^{\dagger})-\frac{1}{2}\mathrm{Tr}(f_{\mu\nu}^{~L}f_{L}^{~\mu\nu}+f_{\mu\nu}^{~R}f_{R}^{~\mu\nu})\right] \\
+&amp;+i\frac{\ell_{6}}{2}\mathrm{Tr}[f_{\mu\nu}^{~R}D^{\mu}U(D^{\nu}U)^{\dagger}+f_{\mu\nu}^{~L}(D^{\mu}U)^{\dagger}D^{\nu}U]- \textcolor{SNSRed}{\color{ #EB811B}
+\frac{\ell_{7}}{16}\left[\mathrm{Tr}(\chi U^{\dagger}-U\chi^{\dagger})\right]^{2}}
++\frac{h_{1}+h_{3}}{4}\mathrm{Tr}(\chi\chi^{\dagger})\\&amp;+\frac{h_{1}-h_{3}}{16}\left\{\left[\mathrm{Tr}(\chi U^{\dagger}+U\chi^{\dagger})\right]^{2}\right. +\left[\mathrm{Tr}(\chi U^{\dagger}-U\chi^{\dagger})\right]^{2}-2\mathrm{Tr}(\chi U^{\dagger}\chi U^{\dagger}+U\chi^{\dagger}U\chi^{\dagger})\Big\} \\
+&amp;-2h_{2}\mathrm{Tr}(f_{\mu\nu}^{~L}f_{L}^{~\mu\nu}+f_{\mu\nu}^{~R}f_{R}^{~\mu\nu}))
+\end{aligned}
+\]</span></p>
+<div class="columns">
+<div class="column" style="width:60%;">
+<div class="fragment" data-fragment-index="2" style="margin-top:20px; margin-left:0px; text-align:left;">
 <ul>
-<li><strong>Left / Right modes</strong>:<br>
-<span class="math display">\[
-\psi_L = P_L \psi, \quad \psi_R = P_R \psi
-\]</span> with <span class="math inline">\(P_{L,R} = \frac{1\mp\gamma_5}{2}\)</span></li>
+<li>Emergence of new Physical effects</li>
 </ul>
 </div>
-</div><div class="column" style="margin-top:0px;">
-<div class="fragment" style="margin-top:-24px;">
+<div class="fragment" data-fragment-index="3" style="margin-top:-0px; margin-left:0px; text-align:left;">
 <ul>
-<li><span class="math display">\[
-\bar{\psi}\, i\gamma^\mu D_\mu \psi
-= \bar{\psi}_\textcolor{red}{\small L} i\gamma^\mu D_\mu \psi_\textcolor{red}{\small L}
-+ \bar{\psi}_\textcolor{blue}{\small R} i\gamma^\mu D_\mu \psi_\textcolor{blue}{\small R}
-\]</span>
-<div style="margin-top:-20px;">
-<p>→ does <strong>not mix</strong> chirality</p>
-</div></li>
+<li>Among all the NLO LECs <span class="math inline">\(\ell_7\)</span> is the least known
+<ul>
+<li><strong>Never determined directly</strong></li>
+</ul></li>
 </ul>
 </div>
-<div class="fragment" style="margin-top:-30px;">
+<div class="fragment" data-fragment-index="4" style="margin-top:-0px; margin-left:0px; text-align:left;">
 <ul>
-<li><span class="math display">\[
-\,\bar{\psi}m\psi =
-\bar{\psi}_\textcolor{red}{\small L} m \psi_\textcolor{blue}{\small R} + \bar{\psi}_\textcolor{blue}{\small R} m \psi_\textcolor{red}{\small L}
-\]</span>
-<div style="margin-top:-20px;">
-<p>→ explicitly <strong>couples</strong> <span class="math inline">\(\textcolor{red}{\small L}\)</span> and <span class="math inline">\(\textcolor{blue}{\small R}\)</span></p>
-</div></li>
+<li>Relation to Axion Phenomenology</li>
+</ul>
+</div>
+</div><div class="column" style="width:40%;">
+
+</div></div>
+<div class="fragment" data-fragment-index="1" style="margin-top:-0px; margin-left:0px; text-align:left;">
+<p><img src="scream.png" style="width:100%; margin-top:-470px; margin-left:300px; transform: scale(0.8)"></p>
+</div>
+</section>
+<section id="my-work" class="slide level2">
+<h2>My work</h2>
+<div class="fragment" data-fragment-index="1" style="margin-top:-30px; margin-left:0px; text-align:left;">
+<p><img src="cont2.png" style="width:80%; transform: scale(1)"></p>
+</div>
+<div class="fragment" data-fragment-index="2" style="margin-top:-5px; margin-left:20px; text-align:left;">
+<ol type="1">
+<li>Improved precision</li>
+<li>Universality test</li>
+<li>Controlled <strong>continuum</strong> and <strong>chiral</strong> extrapolations</li>
+</ol>
+</div>
+</section>
+<section>
+<section id="a-few-open-problems-and-challenges" class="title-slide slide level1 center">
+<h1>(A few) Open Problems and Challenges</h1>
+
+</section>
+<section id="topological-freezing" class="slide level2">
+<h2>Topological Freezing</h2>
+<div class="columns">
+<div class="column" style="width:45%;">
+<div class="fragment" style="margin-top:-10px;">
+<ul>
+<li>No trivial <strong>topology</strong></li>
+<li>Special classical solutions of QCD<br>
+→ <strong>Istantons</strong></li>
+<li>Carry an integer <strong>topological charge <span class="math inline">\(Q\)</span></strong><br>
+</li>
+<li>Transitions between sectors<br>
+→ <strong>tunneling</strong> over energy barriers</li>
+</ul>
+</div>
+<div class="fragment" style="margin-top:-140px; margin-left:-110px; text-align:center;">
+<p><img src="topooo.png" style="width:70%; transform: scale(0.6)"></p>
+</div>
+</div><div class="column" style="width:55%;">
+<div class="fragment" style="margin-top:-60px; text-align:center;">
+<p><img src="topo.png" style="width:100%; transform: scale(.8)"></p>
+</div>
+<div class="fragment" style="margin-top:-60px;">
+<p><strong>Twofold Problem</strong>:</p>
+<ol type="1">
+<li><u>Simulation issues</u>:<br>
+→ Std Alghorithms <strong>fail</strong> as <span class="math inline">\(\small a \to 0\)</span></li>
+<li><u>Phenomenological issues</u>:<br>
+→ <strong>Thermodynamics</strong> of the early universe<br>
+→ <span style="background: linear-gradient(to right, #68a0f9ff, #1e3a8a); 
+            -webkit-background-clip: text; color: transparent;"> <strong>Cold</strong> </span> and <span style="background: linear-gradient(to right, #ef8644ff, #d70d0dff); 
+            -webkit-background-clip: text; color: transparent;"> <strong>Hot</strong> </span> Axion Phenomenology<br>
+→ <strong>Singlet</strong> particle properties</li>
+</ol>
+</div>
+</div></div>
+</section>
+<section id="possible-solutions" class="slide level2">
+<h2>Possible Solutions</h2>
+<div class="columns">
+<div class="column" style="width:60%;">
+<div class="fragment" data-fragment-index="1" style="margin-top:30px;">
+<ul>
+<li><strong>Parallel Tempering / Open Boundary Conditions</strong>
+<ul>
+<li>Run <strong>several copies</strong> at different <strong>temperatures or boundary conditions</strong> simultaneously<br>
+</li>
+<li>Swap configurations between them:
+<ul>
+<li>1 “physical” ensemble<br>
+</li>
+<li>N “eased”</li>
+</ul></li>
+</ul></li>
+</ul>
+</div>
+<div class="fragment" data-fragment-index="3" style="margin-top:50px;">
+<ul>
+<li>Works well in pure gauge</li>
+<li><strong>Fermionic determinant</strong>?<br>
+</li>
+<li>Requires <strong>fine-tuning</strong> of the tower of copies</li>
+</ul>
+</div>
+</div><div class="column" style="width:40%;">
+<p><img src="pt.png" class="fragment" data-fragment-index="2" style="width:100%; margin-top:-20px;"></p>
+<div class="fragment" data-fragment-index="4" style="margin-top:10px;">
+<ul>
+<li>Other possible solutions:
+<ul>
+<li>Metadynamics<br>
+</li>
+<li>Open Boundary conditions<br>
+</li>
+<li>Normalizing Flows?</li>
+</ul></li>
 </ul>
 </div>
 </div></div>
-<div class="fragment" style="margin-top:20px;">
+</section>
+<section id="analytic-continuation" class="slide level2">
+<h2>Analytic Continuation</h2>
+<p>Physical <strong>matrix elements</strong> are related to <strong>correlators</strong> via an <strong>inverse Fourier transform</strong></p>
+<p><span class="math display">\[\small
+C(t)=\int \; dE \exp{\left[ -iEt\right]} \langle P | O |P^\prime\rangle
+\]</span></p>
+<p>in <strong>Minkowski time</strong></p>
+<div class="fragment" style="margin-top:10px;">
 <ul>
-<li><strong>Chiral limit</strong>: <span class="math inline">\(\small m_u = m_d = 0\)</span> ⇒ <span class="math inline">\(\small \mathrm{SU}(2)_V \times \mathrm{SU}(2)_A \times \mathrm{U}(1)_V\)</span> is a <strong>global symmetry</strong>:
+<li>Simulations are performed in <strong>Euclidean time</strong></li>
+</ul>
+</div>
+<div class="fragment" style="margin-top:-10px;">
 <ul>
-<li>QCD spectrum <strong>does not show parity doubling</strong>.</li>
+<li>It means solving an <strong>inverse Laplace problem</strong><br>
+</li>
+<li>This is <strong>ill-posed</strong> and <strong>numerically unstable</strong></li>
+</ul>
+</div>
+<div class="columns">
+<div class="column" style="width:40%;">
+
+</div><div class="column" style="width:60%;">
+<div class="fragment" style="margin-top:5px;margin-left:100px;">
+<ul>
+<li><strong>Backus-Gilbert method</strong>
+<ul>
+<li>Construct smeared spectral function <!--with controlled resolution--></li>
 </ul></li>
 </ul>
 </div>
-</section>
-<section id="chiral-symmetry-breaking-in-real-qcd" class="slide level2">
-<h2>Chiral symmetry breaking in real QCD</h2>
-<div class="columns">
-<div class="column" style="margin-top:30px;">
-<div class="fragment" style="margin-top:-20px;">
-<ol type="1">
-<li><strong>Spontaneous breaking</strong>
+<div class="fragment" style="margin-top:-15px; margin-left:100px;">
 <ul>
-<li><span class="math inline">\(\small \langle \bar{\psi}\psi \rangle \neq 0\)</span> (non-trivial QCD vacuum)<br>
-</li>
-<li><span class="math inline">\(\small \mathrm{SU}(2)_V \times \mathrm{SU}(2)_A \times \mathrm{U}(1)_V
-\;\;\longrightarrow\;\; \mathrm{SU}(2)_V \times \mathrm{U}(1)_V\)</span><br>
-</li>
-<li>3 Nambu–Goldstone bosons ⇒ the <strong>pions</strong></li>
-</ul></li>
-<li><strong>Explicit breaking</strong>
-<ul>
-<li>light quark masses <span class="math inline">\(\small m_{u,d} \neq 0\)</span></li>
-<li>GMOR: <span class="math inline">\(\small{ M_{\pi}^2 = (m_u + m_d)}\frac{\large \langle \bar{\psi}\psi \rangle}{\large f_{\pi}^2} \simeq 135 \mathrm{\, MeV}\)</span></li>
-</ul></li>
-</ol>
+<li><strong>Bayesian approaches</strong> (MEM, BR, etc.)<br>
+<!-- - Use prior knowledge to regularize the inversion --></li>
+</ul>
 </div>
-</div><div class="column" style="margin-top:20px;">
-<p><img src="cool-2.png" class="fragment fade-in-then-semi-out" data-fragment-index="1" style="width:100%; margin-top:-80px; margin-left:60px;"></p>
+<div class="fragment" style="margin-top:-15px; margin-left:100px;">
+<ul>
+<li><strong>Other approaches</strong>:
+<ul>
+<li>Neural networks, Deep-learning…</li>
+</ul></li>
+</ul>
+</div>
 </div></div>
 
 <div class="reveal-header">
@@ -935,7 +1131,7 @@ Discretize space-time as a <strong>4D grid</strong></li>
 <img data-src="">
 </div>
 </div>
-</section>
+</section></section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <div class="footer footer-default">
