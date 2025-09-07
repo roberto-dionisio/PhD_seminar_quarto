@@ -467,7 +467,7 @@ Quantum corrections lead to divergencies:
   \quad
   \beta(g) = -\beta_0 \frac{g^3}{16\pi^2} + \mathcal{O}(g^5)
   $$
-  with $\small \;\beta_0 = 11 - \tfrac{2}{3} N_f$
+  with $\small \;\beta_0 = \tfrac{11}{3} - \tfrac{2}{3} N_f$
 :::
 
 ::: {class="fragment"}
@@ -506,7 +506,7 @@ Quantum corrections lead to divergencies:
 ::: {class="fragment"}
 - **Consequences**:  
   - $\small \mu \to \infty \;\;\Rightarrow\;\; \alpha_s(\mu) \to 0 \;\Rightarrow\; \color{#EB811B}\text{asymptotic freedom}$
-  - $\small \mu \to \Lambda_{\text{QCD}} \;\;\Rightarrow\;\; \alpha_s(\mu) \to \infty \;\Rightarrow\; \color{#EB811B}\text{confinement}$  
+  - $\small \mu \to \Lambda_{\text{QCD}} \;\;\Rightarrow\;\; \alpha_s(\mu) \gg 1 \;\Rightarrow\; \color{#EB811B}\text{confinement}$  
 
 :::
 
@@ -566,7 +566,7 @@ $\small |dV/dr|_{\mathrm{QED}} \approx 2.3 \cdot 10^{2} \ \mathrm{N}$
 :::
 
 
-::: {.callout type='default' class="fragment" data-fragment-index="9" style="margin-top:130px; width:fit-content; margin-left:20px; margin-right:20px; margin-bottom:50px;"}
+::: {.callout type='default' class="fragment" data-fragment-index="8" style="margin-top:130px; width:fit-content; margin-left:20px; margin-right:20px; margin-bottom:50px;"}
 ## Particle Data Group
 <img src="pdg.png" class="fragment" data-fragment-index="10" style="width:100%; margin-left:0px; margin-right:0px;  margin-top:-10px; display:block;"/>
 :::
@@ -574,10 +574,10 @@ $\small |dV/dr|_{\mathrm{QED}} \approx 2.3 \cdot 10^{2} \ \mathrm{N}$
 :::
 
 ::: {.column width="40%"}
-<img src="lattice-potential-removebg-preview.png" class="fragment" data-fragment-index="7" style="width:100%; margin-top:-60px; display:block;"/>
+<img src="lattice-potential-removebg-preview.png" class="fragment" data-fragment-index="2" style="width:100%; margin-top:-60px; display:block;"/>
 
 
-::: {class="fragment" data-fragment-index="8" style="text-align:center; font-style:italic; margin-top:30px; font-size:0.9em;"}
+::: {class="fragment" data-fragment-index="7" style="text-align:center; font-style:italic; margin-top:30px; font-size:0.9em;"}
  **Open problem:**  
 No general *analytic proof* of color confinement in QCD is known.  
 (It is one of the Clay Millennium Prize problems.)
@@ -872,12 +872,12 @@ $$
 ::: {.column width="55%"}
 
 ::: {class="fragment" data-fragment-index="1"}
-- **Massless QCD Lagrangian** has  
+- **Massless QCD Lagrangian**    
   $\small \mathrm{SU}(N_f)_L \times \mathrm{SU}(N_f)_R$ symmetry
 :::
 
 ::: {class="fragment" data-fragment-index="2"}
-- **Exact symmetry?** No!  
+- **Exact Realization?** No!  
   → We do not observe **parity doubling**
 :::
 
@@ -922,7 +922,7 @@ $$
   **How?**
 <div style="margin-top:-5px;">
   - Keep underlying symmetries  
-  - Expand in $p/\Lambda$ and $m_q$  
+  - Expand in $p/\Lambda$  
   - Emergence of **Low Energy Constants**
 </div>
 :::
@@ -1066,7 +1066,7 @@ $$
 &rightarrow; **tunneling** over energy barriers
 :::
 
-::: {class="fragment"  data-fragment-index="4" style="margin-top:-100px; margin-left:-110px; text-align:center;"}
+::: {class="fragment"  data-fragment-index="3" style="margin-top:-100px; margin-left:-110px; text-align:center;"}
 <img src="topooo.png" style="width:70%; transform: scale(0.6)"/>
 :::
 
@@ -1079,7 +1079,7 @@ $$
 <img src="topo.png" style="width:100%; transform: scale(.8)"/>
 :::
 
-::: {class="fragment" data-fragment-index="3" style="margin-top:-60px;"}
+::: {class="fragment" data-fragment-index="4" style="margin-top:-60px;"}
 **Twofold Problem**:
 
 1. <u>Simulation issues</u>:  
@@ -1107,7 +1107,7 @@ $$
 
 ::: {.column width="60%"}
 
-::: {class="fragment" data-fragment-index="1" style="margin-top:30px;"}
+::: {class="fragment" data-fragment-index="1" style="margin-top:30px; margin-left:30px;"}
 - **Parallel Tempering** 
   - Run **several copies** at different **temperatures or boundary conditions** simultaneously  
   - Swap configurations between them:  
@@ -1115,7 +1115,7 @@ $$
     - N “eased” replicas
 :::
 
-::: {class="fragment" data-fragment-index="3" style="margin-top:50px;"}
+::: {class="fragment" data-fragment-index="3" style="margin-top:50px; margin-left:30px;"}
 - Works well in pure gauge
 -  **Fermionic determinant**?  
 - Requires **fine-tuning** of the tower of copies
@@ -1152,7 +1152,7 @@ $$
 **Correlators** are related to **spectral function** via an **inverse Fourier transform** 
 
 $$\small
-C(t)=\int  dE\; \exp{\left[-Et\right]} \rho(E) 
+C(t)=\int  dE\; \exp{\left[-iEt\right]} \rho(E) 
 $$
 
 in **Minkowski time**
@@ -1180,8 +1180,8 @@ in **Minkowski time**
 
 ::: {class="fragment" data-fragment-index="4" style="margin-top:-175px;margin-left:140px;"}
 $$\begin{aligned}\small
-\hat \rho_\sigma(E_0) \;=\; \int dE \; \sigma(E,E_0)\,\rho(E)\\
-\small C_\sigma(t;E_0) \;=\; \int dE \; e^{-Et} \,\rho_\sigma(E).
+\hat \rho_\sigma(E) \;=\; \int dE_0 \; \sigma(E,E_0)\,\rho(E_0)\\
+\small C_\sigma(t) \;=\; \int dE \; e^{-Et} \,\rho_\sigma(E).
 \end{aligned}
 $$
 
@@ -1275,7 +1275,7 @@ $$ \small \frac{\Gamma_\mathrm{sphal}}{T^4} = 0.079(25) \qquad T=1.24T_c $$
 
 
 ## That's not all
-::: {style="position: absolute; top: 10px; width:100%; text-align:center; font-size:2em;"}
+::: {style="position: absolute; top: 20px; width:100%; text-align:center; font-size:2em;"}
 Maaaaany Open Problems in Lattice QCD
 :::
 
@@ -1388,7 +1388,7 @@ Just pick one, dive in and  [**have fun**]{style="color: #EB811B;"}!
 
     // 2. Calcola l'intervallo perfetto per ogni spotlight
     // (durata totale / numero di elementi) * 1000 per averlo in millisecondi
-    const perfectInterval = (animationDuration / numUniqueItems) * 900;
+    const perfectInterval = (animationDuration / numUniqueItems) * 740;
 
     function updateSpotlight() {
 
