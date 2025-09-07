@@ -522,10 +522,6 @@ QCD becomes strongly coupled in the IR → [**non-perturbative tools**]{style="c
 -->
 ## Confinement
 
-::: {class="fragment" data-fragment-index="1"}
-- At low energies $\small \alpha_s(\mu) \gg 1$ 
-:::
-
 :::: {.columns}
 
 ::: {.column width="60%"}
@@ -550,7 +546,7 @@ QCD becomes strongly coupled in the IR → [**non-perturbative tools**]{style="c
 </div>
 :::
 
-::: {class="fragment fade-in-then-semi-out" data-fragment-index="4" style="position:absolute; left:267px; top:265px;"}
+::: {class="fragment fade-in-then-semi-out" data-fragment-index="4" style="position:absolute; left:267px; top:207px;"}
 <img src="strong-car.png" style="width:25%; margin:auto; display:block;"/>
 :::
 
@@ -561,7 +557,7 @@ $\small |dV/dr|_{\mathrm{QED}} \approx 2.3 \cdot 10^{2} \ \mathrm{N}$
 </div>
 :::
 
-::: {class="fragment fade-in-then-semi-out" data-fragment-index="6" style="position:absolute; left:-40px; top:308px;"}
+::: {class="fragment fade-in-then-semi-out" data-fragment-index="6" style="position:absolute; left:-40px; top:250px;"}
 <img src="strong-sheep.png" style="width:25%; margin:auto; display:block;"/>
 :::
 
@@ -574,7 +570,7 @@ $\small |dV/dr|_{\mathrm{QED}} \approx 2.3 \cdot 10^{2} \ \mathrm{N}$
 :::
 
 ::: {.column width="40%"}
-<img src="lattice-potential-removebg-preview.png" class="fragment" data-fragment-index="2" style="width:100%; margin-top:-60px; display:block;"/>
+<img src="lattice-potential-removebg-preview.png" class="fragment" data-fragment-index="2" style="width:100%; margin-top:10px; display:block;"/>
 
 
 ::: {class="fragment" data-fragment-index="7" style="text-align:center; font-style:italic; margin-top:30px; font-size:0.9em;"}
