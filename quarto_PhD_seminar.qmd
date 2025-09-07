@@ -400,21 +400,21 @@ Quarks are never observed as free particles
 **Gauge invariance** not only dictates the kinetic terms, but also **fixes the interaction structure**:
 :::
 
-::: {class="fragment" data-fragment-index="1" style="margin-top:10px; margin-left:120px; justify-content:center; font-size:1.3em; font-weight:200;"}
+::: {class="fragment" data-fragment-index="2" style="margin-top:10px; margin-left:120px; justify-content:center; font-size:1.3em; font-weight:200;"}
 $\small \sim g \bar{\psi}\psi A$
 
 
 :::
-::: {class="fragment" data-fragment-index="3" style="margin-top:-54px; margin-left:550px; justify-content:center; font-size:1.3em; font-weight:200;"}
+::: {class="fragment" data-fragment-index="4" style="margin-top:-54px; margin-left:550px; justify-content:center; font-size:1.3em; font-weight:200;"}
 $\small \sim g \partial A A A \quad \quad \quad \sim g^2 AAAA$
 :::
 
 
 :::{.r-hstack style="align-items:center; justify-content:center; margin-top:-10px;"}
 
-<img src="qed-liketest-2.png" class="fragment fade-in-then-semi-out" data-fragment-index="2" style="width:20%; display:inline-block; margin-left:40px;" />
-<img src="gluethree-test-2.png" class="fragment zoom-in" data-fragment-index="4" style="width:20%; display:inline-block; margin-left:240px;" />
-<img src="gluefour-test-2.png" class="fragment zoom-in" data-fragment-index="4" style="width:20%; display:inline-block;" />
+<img src="qed-liketest-2.png" class="fragment fade-in-then-semi-out" data-fragment-index="3" style="width:20%; display:inline-block; margin-left:40px;" />
+<img src="gluethree-test-2.png" class="fragment zoom-in" data-fragment-index="5" style="width:20%; display:inline-block; margin-left:240px;" />
+<img src="gluefour-test-2.png" class="fragment zoom-in" data-fragment-index="5" style="width:20%; display:inline-block;" />
 
 :::
 
@@ -422,7 +422,7 @@ $\small \sim g \partial A A A \quad \quad \quad \sim g^2 AAAA$
 
 ::: {.column width="50%" style="margin-top:-35px;"}
 
-::: {class="fragment" data-fragment-index="2"}
+::: {class="fragment" data-fragment-index="3"}
 - **QED-like vertex**  
   - quark–gluon interaction  
   - analogous to electron–photon in QED
@@ -432,7 +432,7 @@ $\small \sim g \partial A A A \quad \quad \quad \sim g^2 AAAA$
 
 ::: {.column width="50%" style="margin-top:-35px;"}
 
-::: {class="fragment" data-fragment-index="4"}
+::: {class="fragment" data-fragment-index="6"}
 - **New in QCD**  
   - 3-gluon and 4-gluon self-interactions  
   - consequence of non-abelian $\mathrm{SU}(3)_C$  
@@ -522,7 +522,7 @@ QCD becomes strongly coupled in the IR → [**non-perturbative tools**]{style="c
 -->
 ## Confinement
 
-::: {class="fragment"}
+::: {class="fragment" data-fragment-index="1"}
 - At low energies $\small \alpha_s(\mu) \gg 1$ 
 :::
 
@@ -531,7 +531,7 @@ QCD becomes strongly coupled in the IR → [**non-perturbative tools**]{style="c
 ::: {.column width="60%"}
 
 
-::: {class="fragment"}
+::: {class="fragment" data-fragment-index="2"}
 - **QCD potential**:
 <div style="margin-top:-20px;"> 
   $$\small
@@ -540,7 +540,7 @@ QCD becomes strongly coupled in the IR → [**non-perturbative tools**]{style="c
 </div>
 :::
 
-::: {class="fragment" style="margin-top:-20px;"}
+::: {class="fragment" data-fragment-index="3" style="margin-top:-20px;"}
 - **Force**:
   <div style="margin-top:-20px;">   
   $$ \small
@@ -550,32 +550,38 @@ QCD becomes strongly coupled in the IR → [**non-perturbative tools**]{style="c
 </div>
 :::
 
-::: {class="fragment fade-in-then-semi-out" style="position:absolute; left:267px; top:265px;"}
+::: {class="fragment fade-in-then-semi-out" data-fragment-index="4" style="position:absolute; left:267px; top:265px;"}
 <img src="strong-car.png" style="width:25%; margin:auto; display:block;"/>
 :::
 
 
-::: {class="fragment" style="margin-top:-40px; margin-left:25px;"}
+::: {class="fragment" data-fragment-index="5" style="margin-top:-40px; margin-left:25px;"}
 <div style="margin-top:-20px; text-align:left;">   
 $\small |dV/dr|_{\mathrm{QED}} \approx 2.3 \cdot 10^{2} \ \mathrm{N}$
 </div>
 :::
 
-::: {class="fragment fade-in-then-semi-out" style="position:absolute; left:-40px; top:308px;"}
+::: {class="fragment fade-in-then-semi-out" data-fragment-index="6" style="position:absolute; left:-40px; top:308px;"}
 <img src="strong-sheep.png" style="width:25%; margin:auto; display:block;"/>
 :::
 
 
-::: {.callout type='default' class="fragment" style="margin-top:130px; width:fit-content; margin-left:20px; margin-right:20px; margin-bottom:50px;"}
+::: {.callout type='default' class="fragment" data-fragment-index="9" style="margin-top:130px; width:fit-content; margin-left:20px; margin-right:20px; margin-bottom:50px;"}
 ## Particle Data Group
-<img src="pdg.png" class="fragment" style="width:100%; margin-left:0px; margin-right:0px;  margin-top:-10px; display:block;"/>
+<img src="pdg.png" class="fragment" data-fragment-index="10" style="width:100%; margin-left:0px; margin-right:0px;  margin-top:-10px; display:block;"/>
 :::
 
 :::
 
 ::: {.column width="40%"}
-<img src="lattice-potential-removebg-preview.png" class="fragment" style="width:100%; margin-top:-60px; display:block;"/>
+<img src="lattice-potential-removebg-preview.png" class="fragment" data-fragment-index="7" style="width:100%; margin-top:-60px; display:block;"/>
 
+
+::: {class="fragment" data-fragment-index="8" style="text-align:center; font-style:italic; margin-top:30px; font-size:0.9em;"}
+ **Open problem:**  
+No general *analytic proof* of color confinement in QCD is known.  
+(It is one of the Clay Millennium Prize problems.)
+:::
 :::
 
 
@@ -602,14 +608,14 @@ $\small |dV/dr|_{\mathrm{QED}} \approx 2.3 \cdot 10^{2} \ \mathrm{N}$
 :::
 
 ::: {class="fragment" data-fragment-index="2"}
-- Physics is dominated by **non-perturbative phenomena**:  
+- QCD physics is dominated by **non-perturbative phenomena**:  
   - Confinement  
   - Mass gap  
   - Hadron spectrum & structure
 :::
 
 ::: {class="fragment" data-fragment-index="3"}
-- Need **non-perturbative tools**:
+- Need appropriate **Low Enery tools**:
   - **Lattice QCD** (first-principles numerical approach)  
   - **Effective Field Theories** (low-energy approximations)
 :::
@@ -628,7 +634,7 @@ $\small |dV/dr|_{\mathrm{QED}} \approx 2.3 \cdot 10^{2} \ \mathrm{N}$
 
 ::: {.column width="65%"}
 
-::: {class="fragment" data-fragment-index="1" style="margin-top:-8px;"}
+::: {class="fragment" data-fragment-index="1" style="margin-top:5px;"}
 - **Euclidean formulation**:  
   Discretize space-time as a **4D grid**
 :::
@@ -642,7 +648,7 @@ $\small |dV/dr|_{\mathrm{QED}} \approx 2.3 \cdot 10^{2} \ \mathrm{N}$
   - <span style="background: linear-gradient(to right, #ef8644ff, #d70d0dff); 
                -webkit-background-clip: text; color: transparent;">
     **IR**
-    </span>: finite volume $L^4$
+    </span>: finite size $L$
 :::
 
 ::: {class="fragment" data-fragment-index="3" style="margin-top:-8px;"}
@@ -664,7 +670,7 @@ $\small |dV/dr|_{\mathrm{QED}} \approx 2.3 \cdot 10^{2} \ \mathrm{N}$
 :::
 
 ::: {.column width="35%"}
-<div style="position:relative; width:100%; height:400px; margin-top:30px;">
+<div style="position:relative; width:100%; height:400px; margin-top:35px;">
 
   <img src="lettuce_first.svg" 
        class="fragment" data-fragment-index="1"
@@ -713,7 +719,7 @@ $$
 
 ::: {.column width="70%"}
 
-::: {class="fragment" style="margin-top:-20px; margin-bottom:-30px;"} 
+::: {class="fragment" data-fragment-index="1" style="margin-top:-20px; margin-bottom:-30px;"} 
 1. **Importance sampling**
 Draw gauge configurations $\small \left\{ U_\mu^{(i)} \right\}$ from:
 <div style="margin-top:-10px;">
@@ -724,7 +730,7 @@ $$
 :::
 
 ::: {class="fragment" style="margin-top:-10px;"}
-2. $\small \forall i$ compute **fermionic observable**
+2. $\small \forall i$ compute **observable**
 $\langle\mathcal{O}\rangle_F[U^{(i)}]$
 :::
 
@@ -764,15 +770,15 @@ $$
 
 ::: {.column width="30%"}
 
-<img src="markov_chain.png" class="fragment"  style="width:100%; margin-top:20px; display:block; transform: scale(1.6);"/>
+<img src="markov_chain.png" class="fragment" data-fragment-index="1" style="width:100%; margin-top:20px; display:block; transform: scale(1.6);"/>
 
 ::: {.fragment style="margin-top:60px;"}
 
 
-| Experiments | Lattice QCD |
+| **Experiments** | **Lattice QCD** |
 |------------|------------|
 | Accelerators (LHC) | Ensemble of configurations |
-| Detectors (CMS, ATLAS) | Fermionic observables |
+| Detectors (CMS, ATLAS) | Observables |
 
 :::
 
@@ -954,8 +960,8 @@ $$
 At LO Life is easy  
 →  **two** Low-Energy Constants (LECs):
 
-1. $\textcolor{red}{f}$ (pion decay constant)  
-2. $\textcolor{blue}{B}$ (related to quark condensate)  
+1. $\textcolor{red}{f}$ pion decay constant 
+2. $\textcolor{blue}{B}$ (related to quark condensate 
 :::
 
 :::
@@ -981,7 +987,7 @@ $$\small
 \begin{aligned}
 \mathcal L_{\mathrm{eff}}^{\mathrm{NLO}}=& \frac{\ell_{1}}{4}\left\{\mathrm{Tr}[D_{\mu}U(D^{\mu}U)^{\dagger}]\right\}^{2}+\frac{\ell_{2}}{4}\mathrm{Tr}[D_{\mu}U(D_{\nu}U)^{\dagger}]\mathrm{Tr}[D^{\mu}U(D^{\nu}U)^{\dagger}] 
 +\frac{\ell_{3}}{16}\left[\mathrm{Tr}(\chi U^{\dagger}+U\chi^{\dagger})\right]^{2}\\&+\frac{\ell_{4}}{4}\mathrm{Tr}[D_{\mu}U(D^{\mu}\chi)^{\dagger}+D_{\mu}\chi(D^{\mu}U)^{\dagger}]+\ell_{5}\left[\mathrm{Tr}(f_{\mu\nu}^{~R}Uf_{L}^{~\mu\nu}U^{\dagger})-\frac{1}{2}\mathrm{Tr}(f_{\mu\nu}^{~L}f_{L}^{~\mu\nu}+f_{\mu\nu}^{~R}f_{R}^{~\mu\nu})\right] \\
-&+i\frac{\ell_{6}}{2}\mathrm{Tr}[f_{\mu\nu}^{~R}D^{\mu}U(D^{\nu}U)^{\dagger}+f_{\mu\nu}^{~L}(D^{\mu}U)^{\dagger}D^{\nu}U]- \textcolor{SNSRed}{\color{ #EB811B}
+&+i\frac{\ell_{6}}{2}\mathrm{Tr}[f_{\mu\nu}^{~R}D^{\mu}U(D^{\nu}U)^{\dagger}+f_{\mu\nu}^{~L}(D^{\mu}U)^{\dagger}D^{\nu}U]-{\color{ #EB811B}
 \frac{\ell_{7}}{16}\left[\mathrm{Tr}(\chi U^{\dagger}-U\chi^{\dagger})\right]^{2}}
  +\frac{h_{1}+h_{3}}{4}\mathrm{Tr}(\chi\chi^{\dagger})\\&+\frac{h_{1}-h_{3}}{16}\left\{\left[\mathrm{Tr}(\chi U^{\dagger}+U\chi^{\dagger})\right]^{2}\right. +\left[\mathrm{Tr}(\chi U^{\dagger}-U\chi^{\dagger})\right]^{2}-2\mathrm{Tr}(\chi U^{\dagger}\chi U^{\dagger}+U\chi^{\dagger}U\chi^{\dagger})\Big\} \\
 &-2h_{2}\mathrm{Tr}(f_{\mu\nu}^{~L}f_{L}^{~\mu\nu}+f_{\mu\nu}^{~R}f_{R}^{~\mu\nu})) 
@@ -1006,7 +1012,7 @@ $$
 :::
 
 ::: {class="fragment" data-fragment-index="4" style="margin-top:-0px; margin-left:0px; text-align:left;"}
-- Relation to Axion Phenomenology
+- Related to Axion Phenomenology
 :::
 
 
@@ -1174,19 +1180,19 @@ in **Minkowski time**
 
 ::: {class="fragment" data-fragment-index="4" style="margin-top:-175px;margin-left:140px;"}
 $$\begin{aligned}\small
-\hat \rho_\sigma(E_0) \;&=\; \int dE \; \sigma(E,E_0)\,\rho(E)\\
-\small C_\sigma(t;E_0) \;&=\; \int dE \; e^{-iEt} \,\rho_\sigma(E).
+\hat \rho_\sigma(E_0) \;=\; \int dE \; \sigma(E,E_0)\,\rho(E)\\
+\small C_\sigma(t;E_0) \;=\; \int dE \; e^{-Et} \,\rho_\sigma(E).
 \end{aligned}
 $$
 
 :::
 
-::: {class="fragment" data-fragment-index="3" style="margin-top:5px;margin-left:100px;"}
+::: {class="fragment" data-fragment-index="3" style="margin-top:-15px;margin-left:100px;"}
 - **Backus-Gilbert method**  
   - Construct smeared spectral function <!--with controlled resolution-->
 :::
 
-::: {class="fragment" data-fragment-index="5" style="margin-top:-15px; margin-left:100px;"}
+::: {class="fragment" data-fragment-index="5" style="margin-top:15px; margin-left:100px;"}
 - **Bayesian approaches** (MEM, BR, etc.)  
 <!-- - Use prior knowledge to regularize the inversion -->
 :::
