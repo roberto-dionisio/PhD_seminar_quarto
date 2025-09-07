@@ -1000,7 +1000,7 @@ M_\pi^2  \;=\; (m_u + m_d)\frac{\langle \bar{\psi}\psi\rangle}{f_\pi^2}
 <h2>Topological Freezing</h2>
 <div class="columns">
 <div class="column" style="width:45%;">
-<div class="fragment" style="margin-top:-10px;">
+<div class="fragment" data-fragment-index="1" style="margin-top:-10px;">
 <ul>
 <li>No trivial <strong>topology</strong></li>
 <li>Special classical solutions of QCD<br>
@@ -1011,14 +1011,14 @@ M_\pi^2  \;=\; (m_u + m_d)\frac{\langle \bar{\psi}\psi\rangle}{f_\pi^2}
 → <strong>tunneling</strong> over energy barriers</li>
 </ul>
 </div>
-<div class="fragment" style="margin-top:-140px; margin-left:-110px; text-align:center;">
+<div class="fragment" data-fragment-index="4" style="margin-top:-100px; margin-left:-110px; text-align:center;">
 <p><img src="topooo.png" style="width:70%; transform: scale(0.6)"></p>
 </div>
 </div><div class="column" style="width:55%;">
-<div class="fragment" style="margin-top:-60px; text-align:center;">
+<div class="fragment" data-fragment-index="2" style="margin-top:-60px; text-align:center;">
 <p><img src="topo.png" style="width:100%; transform: scale(.8)"></p>
 </div>
-<div class="fragment" style="margin-top:-60px;">
+<div class="fragment" data-fragment-index="3" style="margin-top:-60px;">
 <p><strong>Twofold Problem</strong>:</p>
 <ol type="1">
 <li><u>Simulation issues</u>:<br>
@@ -1039,15 +1039,15 @@ M_\pi^2  \;=\; (m_u + m_d)\frac{\langle \bar{\psi}\psi\rangle}{f_\pi^2}
 <div class="column" style="width:60%;">
 <div class="fragment" data-fragment-index="1" style="margin-top:30px;">
 <ul>
-<li><strong>Parallel Tempering / Open Boundary Conditions</strong>
+<li><strong>Parallel Tempering</strong>
 <ul>
 <li>Run <strong>several copies</strong> at different <strong>temperatures or boundary conditions</strong> simultaneously<br>
 </li>
 <li>Swap configurations between them:
 <ul>
-<li>1 “physical” ensemble<br>
+<li>1 “physical”<br>
 </li>
-<li>N “eased”</li>
+<li>N “eased” replicas</li>
 </ul></li>
 </ul></li>
 </ul>
@@ -1061,7 +1061,12 @@ M_\pi^2  \;=\; (m_u + m_d)\frac{\langle \bar{\psi}\psi\rangle}{f_\pi^2}
 </ul>
 </div>
 </div><div class="column" style="width:40%;">
-<p><img src="pt.png" class="fragment" data-fragment-index="2" style="width:100%; margin-top:-20px;"></p>
+<figure style="width:100%; margin-top:-20px;">
+<img src="pt.png" class="fragment" data-fragment-index="2" style="width:100%;">
+<figcaption class="fragment" data-fragment-index="2" style="text-align:center; font-size:0.8em; color:#666; font-style:italic;">
+From C. Bonanno, C. Bonati and M. D’Elia, J. High Energ. Phys. 2021
+</figcaption>
+</figure>
 <div class="fragment" data-fragment-index="4" style="margin-top:10px;">
 <ul>
 <li>Other possible solutions:
@@ -1076,11 +1081,11 @@ M_\pi^2  \;=\; (m_u + m_d)\frac{\langle \bar{\psi}\psi\rangle}{f_\pi^2}
 </div>
 </div></div>
 </section>
-<section id="analytic-continuation" class="slide level2">
-<h2>Analytic Continuation</h2>
-<p><strong>Spectral functions</strong> are related to <strong>correlators</strong> via an <strong>inverse Fourier transform</strong></p>
+<section id="inverse-problem-analytical-continuation" class="slide level2">
+<h2>Inverse Problem/ Analytical Continuation</h2>
+<p><strong>Correlators</strong> are related to <strong>spectral function</strong> via an <strong>inverse Fourier transform</strong></p>
 <p><span class="math display">\[\small
-C(t)=\int  dE\; \exp{\left[ -iEt\right]} \rho(E)
+C(t)=\int  dE\; \exp{\left[-Et\right]} \rho(E)
 \]</span></p>
 <p>in <strong>Minkowski time</strong></p>
 <div class="fragment" data-fragment-index="1" style="margin-top:10px;">
@@ -1130,173 +1135,258 @@ C(t)=\int  dE\; \exp{\left[ -iEt\right]} \rho(E)
 </div>
 </div></div>
 </section>
+<section id="application-to-the-sphaleron-rate" class="slide level2">
+<h2>Application to the Sphaleron Rate</h2>
+<div class="columns">
+<div class="column" style="width:55%;">
+<div class="fragment" data-fragment-index="1" style="margin-top:-10px;">
+<ul>
+<li><strong>Sphaleron rate</strong> ⇔ <strong>frequency of topological transitions</strong></li>
+</ul>
+</div>
+<div class="fragment" data-fragment-index="2" style="margin-top:-10px;">
+<ul>
+<li>Measure <strong>topological charge correlator</strong> in Euclidean time<br>
+<span class="math display">\[\small C(t) = \langle Q(t) Q(0) \rangle \]</span></li>
+</ul>
+</div>
+<div class="fragment" data-fragment-index="3" style="margin-top:-10px;">
+<ul>
+<li>Need <strong>real-time sphaleron rate</strong>:<br>
+<span class="math display">\[\small \Gamma_\mathrm{sphal} \sim \lim_{\omega\to 0} \frac{\rho(\omega)}{\omega} \]</span></li>
+</ul>
+</div>
+<div class="fragment" data-fragment-index="4" style="margin-top:-10px;">
+<ul>
+<li>Challenges: <strong>ill-posed</strong>, noisy data, limited temporal extent</li>
+</ul>
+</div>
+<div class="fragment" data-fragment-index="5" style="margin-top:-10px;">
+<ul>
+<li>Application of <strong>Backus-Gilbert</strong> method</li>
+</ul>
+</div>
+</div><div class="column" style="width:45%;">
+<div class="fragment" data-fragment-index="6" style="margin-top:-15px; margin-left:0;">
+<figure style="width:100%; margin-top:-20px;">
+<img src="sphall.png" style="width:100%;">
+<figcaption style="text-align:center; font-size:0.8em; color:#666; font-style:italic;">
+From C. Bonanno F. D’Angelo M. D’Elia et al., PoS 2023
+</figcaption>
+</figure>
+</div>
+<div class="fragment" data-fragment-index="6" style="margin-top:0px;">
+<p><span class="math display">\[ \small \frac{\Gamma_\mathrm{sphal}}{T^4} = 0.079(25) \qquad T=1.24T_c \]</span></p>
+</div>
+<div class="fragment" data-fragment-index="7" style="margin-top:-10px;">
+<p><strong>To-do</strong>: Extension to non-zero momentum</p>
+</div>
+</div></div>
+</section>
 <section id="thats-not-all" class="slide level2">
 <h2>That’s not all</h2>
 <div style="position: absolute; top: 10px; width:100%; text-align:center; font-size:2em;">
-<p>Many Open Problems in Lattice QCD</p>
-</div>
-<div style="position: relative; height: 400px; overflow: hidden; margin-top:70px;">
-<div style="display: inline-block; animation: scroll 30s linear infinite;">
-<ul>
-<li><strong>Topology &amp; sampling</strong>
-<ul>
-<li>Topological freezing<br>
-</li>
-<li>Autocorrelations<br>
-</li>
-<li>Rare-event sampling</li>
-</ul></li>
-<li><strong>Analytic continuation &amp; spectra</strong>
-<ul>
-<li>Analytic continuation / inverse Laplace problem<br>
-</li>
-<li>Multi-particle states &amp; finite volume effects<br>
-</li>
-<li>Excited-state contamination</li>
-</ul></li>
-<li><strong>Fermion-related challenges</strong>
-<ul>
-<li>Signal-to-noise problem in baryons<br>
-</li>
-<li>Disconnected diagrams<br>
-</li>
-<li>Chiral symmetry / small quark masses</li>
-</ul></li>
-<li><strong>QED corrections</strong>
-<ul>
-<li>QED corrections<br>
-</li>
-<li>Isospin breaking effects</li>
-</ul></li>
-<li><strong>Finite temperature / density</strong>
-<ul>
-<li>Finite-temperature QCD<br>
-</li>
-<li>Real-time dynamics / transport coefficients<br>
-</li>
-<li>QCD at finite baryon density (sign problem)</li>
-</ul></li>
-<li><strong>CP &amp; beyond Standard Model</strong>
-<ul>
-<li>CP-violating observables<br>
-</li>
-<li>Neutron EDM<br>
-</li>
-<li>Rare decays</li>
-</ul></li>
-<li><strong>Computational &amp; algorithmic</strong>
-<ul>
-<li>Continuum / infinite-volume extrapolation<br>
-</li>
-<li>Efficient solvers for Dirac operator<br>
-</li>
-<li>Scaling to exascale HPC</li>
-</ul></li>
-<li><strong>Machine Learning / AI applications</strong>
-<ul>
-<li>Accelerating gauge configuration sampling<br>
-</li>
-<li>Normalizing flows for topological sectors<br>
-</li>
-<li>Surrogate models for correlators<br>
-</li>
-<li>Bayesian inference for spectral reconstruction</li>
-</ul></li>
-</ul>
-<!-- duplicated for smooth looping -->
-<ul>
-<li><strong>Topology &amp; sampling</strong>
-<ul>
-<li>Topological freezing<br>
-</li>
-<li>Autocorrelations<br>
-</li>
-<li>Rare-event sampling</li>
-</ul></li>
-<li><strong>Analytic continuation &amp; spectra</strong>
-<ul>
-<li>Analytic continuation / inverse Laplace problem<br>
-</li>
-<li>Multi-particle states &amp; finite volume effects<br>
-</li>
-<li>Excited-state contamination</li>
-</ul></li>
-<li><strong>Fermion-related challenges</strong>
-<ul>
-<li>Signal-to-noise problem in baryons<br>
-</li>
-<li>Disconnected diagrams<br>
-</li>
-<li>Chiral symmetry / small quark masses</li>
-</ul></li>
-<li><strong>Gauge &amp; QED corrections</strong>
-<ul>
-<li>QED corrections<br>
-</li>
-<li>Isospin breaking effects</li>
-</ul></li>
-<li><strong>Finite temperature / density</strong>
-<ul>
-<li>Finite-temperature QCD<br>
-</li>
-<li>Real-time dynamics / transport coefficients<br>
-</li>
-<li>QCD at finite baryon density (sign problem)</li>
-</ul></li>
-<li><strong>CP &amp; beyond Standard Model</strong>
-<ul>
-<li>CP-violating observables<br>
-</li>
-<li>Neutron EDM<br>
-</li>
-<li>Rare decays</li>
-</ul></li>
-<li><strong>Computational &amp; algorithmic</strong>
-<ul>
-<li>Continuum / infinite-volume extrapolation<br>
-</li>
-<li>Efficient solvers for Dirac operator<br>
-</li>
-<li>Scaling to exascale HPC</li>
-</ul></li>
-<li><strong>Machine Learning / AI applications</strong>
-<ul>
-<li>Accelerating gauge configuration sampling<br>
-</li>
-<li>Normalizing flows for topological sectors<br>
-</li>
-<li>Surrogate models for correlators<br>
-</li>
-<li>Bayesian inference for spectral reconstruction</li>
-</ul></li>
-</ul>
-</div>
+<p>Maaaaany Open Problems in Lattice QCD</p>
 </div>
 <style>
-@keyframes scroll {
-  0% { transform: translateY(10%); }
-  100% { transform: translateY(-50%); } /* metà perché lista duplicata */
-}
-</style>
-<script>
-const waitForReveal = setInterval(() => {
-  if (typeof Reveal !== 'undefined') {
-    clearInterval(waitForReveal);
-
-    Reveal.on('slidechanged', event => {
-      const slide = event.currentSlide;
-      const scrollDiv = slide.querySelector('#scrolling-list .scroll-content');
-
-      if(scrollDiv) {
-        // reset animation
-        scrollDiv.classList.remove('scroll-animation');
-        void scrollDiv.offsetWidth; // forza reflow
-        scrollDiv.classList.add('scroll-animation');
-      }
-    });
+  /* Stile del contenitore principale per centrare e limitare l'altezza */
+  .scroll-container {
+    position: relative;
+    height: 400px; /* Altezza visibile dell'area di scorrimento */
+    overflow: hidden;
+    margin-top: 100px;
+    border: 0px solid #ffffff; /* Opzionale, per vedere i bordi */
+    width: 500px; /* Opzionale, per dare una larghezza definita */
+    margin-left: 0px;
+    margin-right: auto;
   }
-}, 100);
+
+  .scroll-content {
+    display: inline-block;
+    text-align: center;
+    /* L'animazione muove il contenuto verso l'alto */
+    animation: scroll 20s linear infinite; /* Aumentato il tempo per un contenuto più lungo */
+  }
+
+  @keyframes scroll {
+    0% {
+      transform: translateY(0%);
+    }
+    100% {
+      /* Scorre esattamente della metà della sua altezza (l'altezza di una copia) */
+      transform: translateY(-50%);
+    }
+  }
+
+  .item {
+    padding: 4px 0;
+    transition: transform 0.3s;
+  }
+
+  .item.main {
+    font-weight: bold;
+    font-size: 1.1em;
+  }
+
+  .item.main.active {
+    transform: scale(1.2);
+    color: #EB811B; /* Opzionale, per evidenziare meglio */
+  }
+</style>
+<div class="scroll-container">
+<div class="scroll-content">
+<div class="item main">
+<strong>Topology &amp; sampling</strong>
+</div>
+<div class="item">
+Topological freezing
+</div>
+<div class="item">
+Autocorrelations
+</div>
+<div class="item">
+Rare-event sampling
+</div>
+<div class="item main">
+<strong>Analytic continuation &amp; spectra</strong>
+</div>
+<div class="item">
+Analytic continuation / inverse Laplace problem
+</div>
+<div class="item">
+Multi-particle states &amp; finite volume effects
+</div>
+<div class="item">
+Excited-state contamination
+</div>
+<div class="item main">
+<strong>Fermion-related challenges</strong>
+</div>
+<div class="item">
+Signal-to-noise problem in baryons
+</div>
+<div class="item">
+Disconnected diagrams
+</div>
+<div class="item">
+Chiral symmetry / small quark masses
+</div>
+<div class="item main">
+<strong>QED corrections</strong>
+</div>
+<div class="item">
+QED corrections
+</div>
+<div class="item">
+Isospin breaking effects
+</div>
+<div class="item main">
+<strong>Finite temperature / density</strong>
+</div>
+<div class="item">
+Finite-temperature QCD
+</div>
+<div class="item">
+Real-time dynamics / transport coefficients
+</div>
+<div class="item">
+QCD at finite baryon density (sign problem)
+</div>
+<div class="item main">
+<strong>CP &amp; beyond Standard Model</strong>
+</div>
+<div class="item">
+CP-violating observables
+</div>
+<div class="item">
+Neutron EDM
+</div>
+<div class="item">
+Rare decays
+</div>
+<div class="item main">
+<strong>Computational &amp; algorithmic</strong>
+</div>
+<div class="item">
+Continuum / infinite-volume extrapolation
+</div>
+<div class="item">
+Efficient solvers for Dirac operator
+</div>
+<div class="item">
+Scaling to exascale HPC
+</div>
+<div class="item main">
+<strong>Machine Learning / AI applications</strong>
+</div>
+<div class="item">
+Accelerating gauge configuration sampling
+</div>
+<div class="item">
+Normalizing flows for topological sectors
+</div>
+<div class="item">
+Surrogate models for correlators
+</div>
+<div class="item">
+Bayesian inference for spectral reconstruction
+</div>
+</div>
+</div>
+<div class="fragment" data-fragment-index="1" style="text-align:center; margin-top:-200px; margin-left:550px; font-style: italic; font-size:1.3em;">
+<p>Lattice QCD is full of challenges<br>
+Just pick one, dive in and <span style="color: #EB811B;"><strong>have fun</strong></span>!</p>
+</div>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const scrollContent = document.querySelector('.scroll-content');
+    
+    // Duplica il contenuto per il loop infinito
+    scrollContent.innerHTML += scrollContent.innerHTML;
+
+    const mainItems = document.querySelectorAll('.scroll-content .item.main');
+    const numUniqueItems = mainItems.length / 2;
+    let index = 0;
+
+    // --- NUOVA LOGICA DI SINCRONIZZAZIONE ---
+
+    // 1. Durata dell'animazione CSS (in secondi)
+    const animationDuration = 20; 
+
+    // 2. Calcola l'intervallo perfetto per ogni spotlight
+    // (durata totale / numero di elementi) * 1000 per averlo in millisecondi
+    const perfectInterval = (animationDuration / numUniqueItems) * 800;
+
+    function updateSpotlight() {
+      // IL CODICE CHE CAUSAVA LO STACCO È STATO RIMOSSO DA QUI
+
+      // Rimuovi la classe 'active' da tutti gli elementi
+      mainItems.forEach(el => el.classList.remove('active'));
+      
+      // Applica la classe 'active' all'elemento corrente e al suo duplicato
+      mainItems[index].classList.add('active');
+      mainItems[index + numUniqueItems].classList.add('active');
+      
+      // Avanza l'indice per il prossimo ciclo
+      index = (index + 1) % numUniqueItems;
+    }
+
+    // 3. Avvia lo spotlight con l'intervallo calcolato e sincronizzato
+    updateSpotlight();
+    setInterval(updateSpotlight, perfectInterval);
+
+    // Gestione opzionale per RevealJS (se presente)
+    if (typeof Reveal !== 'undefined') {
+      Reveal.on('slidechanged', event => {
+        index = 0;
+        updateSpotlight();
+      });
+    }
+  });
 </script>
+</section></section>
+<section id="thank-you-for-your-attention" class="title-slide slide level1 center">
+<h1>Thank you for your attention</h1>
 
 <div class="reveal-header">
 <div class="header-title">
@@ -1306,7 +1396,7 @@ const waitForReveal = setInterval(() => {
 <img data-src="">
 </div>
 </div>
-</section></section>
+</section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <div class="footer footer-default">
