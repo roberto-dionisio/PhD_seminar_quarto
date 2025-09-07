@@ -10,7 +10,7 @@
   <meta name="generator" content="quarto-1.8.21">
 
   <meta name="author" content="Roberto Dionisio">
-  <meta name="dcterms.date" content="2025-09-06">
+  <meta name="dcterms.date" content="2025-09-07">
   <title>Strong Interactions need Strong Machines</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -162,7 +162,7 @@ Roberto Dionisio
     </div>
 </div>
 
-  <p class="date">September 6, 2025</p>
+  <p class="date">September 7, 2025</p>
 </section>
 <section id="why-i-choose-lattice-qcd" class="slide level2" data-auto-animate="true" data-auto-animate-easing="ease-out">
 <h2 data-id="quarto-animate-title">Why I choose Lattice QCD</h2>
@@ -1078,17 +1078,17 @@ M_\pi^2  \;=\; (m_u + m_d)\frac{\langle \bar{\psi}\psi\rangle}{f_\pi^2}
 </section>
 <section id="analytic-continuation" class="slide level2">
 <h2>Analytic Continuation</h2>
-<p>Physical <strong>matrix elements</strong> are related to <strong>correlators</strong> via an <strong>inverse Fourier transform</strong></p>
+<p><strong>Spectral functions</strong> are related to <strong>correlators</strong> via an <strong>inverse Fourier transform</strong></p>
 <p><span class="math display">\[\small
-C(t)=\int \; dE \exp{\left[ -iEt\right]} \langle P | O |P^\prime\rangle
+C(t)=\int  dE\; \exp{\left[ -iEt\right]} \rho(E)
 \]</span></p>
 <p>in <strong>Minkowski time</strong></p>
-<div class="fragment" style="margin-top:10px;">
+<div class="fragment" data-fragment-index="1" style="margin-top:10px;">
 <ul>
 <li>Simulations are performed in <strong>Euclidean time</strong></li>
 </ul>
 </div>
-<div class="fragment" style="margin-top:-10px;">
+<div class="fragment" data-fragment-index="2" style="margin-top:-10px;">
 <ul>
 <li>It means solving an <strong>inverse Laplace problem</strong><br>
 </li>
@@ -1099,7 +1099,14 @@ C(t)=\int \; dE \exp{\left[ -iEt\right]} \langle P | O |P^\prime\rangle
 <div class="column" style="width:40%;">
 
 </div><div class="column" style="width:60%;">
-<div class="fragment" style="margin-top:5px;margin-left:100px;">
+<div class="fragment" data-fragment-index="4" style="margin-top:-175px;margin-left:140px;">
+<p><span class="math display">\[\begin{aligned}\small
+\hat \rho_\sigma(E_0) \;&amp;=\; \int dE \; \sigma(E,E_0)\,\rho(E)\\
+\small C_\sigma(t;E_0) \;&amp;=\; \int dE \; e^{-iEt} \,\rho_\sigma(E).
+\end{aligned}
+\]</span></p>
+</div>
+<div class="fragment" data-fragment-index="3" style="margin-top:5px;margin-left:100px;">
 <ul>
 <li><strong>Backus-Gilbert method</strong>
 <ul>
@@ -1107,13 +1114,13 @@ C(t)=\int \; dE \exp{\left[ -iEt\right]} \langle P | O |P^\prime\rangle
 </ul></li>
 </ul>
 </div>
-<div class="fragment" style="margin-top:-15px; margin-left:100px;">
+<div class="fragment" data-fragment-index="5" style="margin-top:-15px; margin-left:100px;">
 <ul>
 <li><strong>Bayesian approaches</strong> (MEM, BR, etc.)<br>
 <!-- - Use prior knowledge to regularize the inversion --></li>
 </ul>
 </div>
-<div class="fragment" style="margin-top:-15px; margin-left:100px;">
+<div class="fragment" data-fragment-index="6" style="margin-top:-15px; margin-left:100px;">
 <ul>
 <li><strong>Other approaches</strong>:
 <ul>
@@ -1155,7 +1162,7 @@ C(t)=\int \; dE \exp{\left[ -iEt\right]} \langle P | O |P^\prime\rangle
 </li>
 <li>Chiral symmetry / small quark masses</li>
 </ul></li>
-<li><strong>Gauge &amp; QED corrections</strong>
+<li><strong>QED corrections</strong>
 <ul>
 <li>QED corrections<br>
 </li>

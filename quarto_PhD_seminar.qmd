@@ -1124,20 +1124,20 @@ $$
 ## Analytic Continuation
 
 
-Physical **matrix elements** are related to **correlators** via an **inverse Fourier transform** 
+**Spectral functions** are related to **correlators** via an **inverse Fourier transform** 
 
 $$\small
-C(t)=\int \; dE \exp{\left[ -iEt\right]} \langle P | O |P^\prime\rangle
+C(t)=\int  dE\; \exp{\left[ -iEt\right]} \rho(E) 
 $$
 
 in **Minkowski time**
 
 
-::: {class="fragment" style="margin-top:10px;"}
+::: {class="fragment" data-fragment-index="1" style="margin-top:10px;"}
 - Simulations are performed in **Euclidean time**
 :::
 
-::: {class="fragment" style="margin-top:-10px;"}
+::: {class="fragment" data-fragment-index="2" style="margin-top:-10px;"}
 - It means solving an **inverse Laplace problem**  
 - This is **ill-posed** and **numerically unstable**
 :::
@@ -1153,17 +1153,26 @@ in **Minkowski time**
 
 ::: {.column width="60%"}
 
-::: {class="fragment" style="margin-top:5px;margin-left:100px;"}
+::: {class="fragment" data-fragment-index="4" style="margin-top:-175px;margin-left:140px;"}
+$$\begin{aligned}\small
+\hat \rho_\sigma(E_0) \;&=\; \int dE \; \sigma(E,E_0)\,\rho(E)\\
+\small C_\sigma(t;E_0) \;&=\; \int dE \; e^{-iEt} \,\rho_\sigma(E).
+\end{aligned}
+$$
+
+:::
+
+::: {class="fragment" data-fragment-index="3" style="margin-top:5px;margin-left:100px;"}
 - **Backus-Gilbert method**  
   - Construct smeared spectral function <!--with controlled resolution-->
 :::
 
-::: {class="fragment" style="margin-top:-15px; margin-left:100px;"}
+::: {class="fragment" data-fragment-index="5" style="margin-top:-15px; margin-left:100px;"}
 - **Bayesian approaches** (MEM, BR, etc.)  
 <!-- - Use prior knowledge to regularize the inversion -->
 :::
 
-::: {class="fragment" style="margin-top:-15px; margin-left:100px;"}
+::: {class="fragment" data-fragment-index="6" style="margin-top:-15px; margin-left:100px;"}
 - **Other approaches**:  
   -  Neural networks, Deep-learning...
 :::
@@ -1195,7 +1204,7 @@ Many Open Problems in Lattice QCD
   - Disconnected diagrams  
   - Chiral symmetry / small quark masses  
 
-- **Gauge & QED corrections**  
+- **QED corrections**  
   - QED corrections  
   - Isospin breaking effects  
 
