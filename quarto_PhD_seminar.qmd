@@ -331,7 +331,7 @@ $$
 
 ::: {class="fragment" style="font-size:1.0em; font-style:italic; color:gray; margin-top:-20px; margin-right:0px; text-align:right;"}
 **[Pure gauge]{style="color: #EB811B;"} → already highly non-trivial:**  
-confinement, glueballs, non-linear self-interactions...
+ glueballs, non-linear self-interactions...
 :::
 
 
@@ -858,8 +858,7 @@ $$
   <footer style="text-align:right; font-size:0.8em; color:#666;"><i>— M. Lüscher <br> "Lattice QCD - From Quarks Confinement to Asymptotic Freedom"</i></footer>
 
 
-
-
+# (A few) Open Problems and Challenges
 
 ## Chiral Symmetry in QCD
 
@@ -1043,7 +1042,7 @@ $$
 3. Controlled **continuum** and **chiral** extrapolations
 :::
 
-# (A few) Open Problems and Challenges
+
 
 ## Topological Freezing
 
@@ -1142,132 +1141,7 @@ $$
 
 ::::
 
-## Inverse Problem/ Analytical Continuation
 
-
-**Correlators** are related to **spectral function** via an **inverse Fourier transform** 
-
-$$\small
-C(t)=\int  dE\; \exp{\left[-iEt\right]} \rho(E) 
-$$
-
-in **Minkowski time**
-
-
-::: {class="fragment" data-fragment-index="1" style="margin-top:10px;"}
-- Simulations are performed in **Euclidean time**
-:::
-
-::: {class="fragment" data-fragment-index="2" style="margin-top:-10px;"}
-- It means solving an **inverse Laplace problem**  
-- This is **ill-posed** and **numerically unstable**
-:::
-
-
-
-:::: {.columns}
-
-::: {.column width="40%"}
-
-
-:::
-
-::: {.column width="60%"}
-
-::: {class="fragment" data-fragment-index="4" style="margin-top:-175px;margin-left:140px;"}
-$$\begin{aligned}\small
-\hat \rho_\sigma(E) \;=\; \int dE_0 \; \sigma(E,E_0)\,\rho(E_0)\\
-\small C_\sigma(t) \;=\; \int dE \; e^{-Et} \,\rho_\sigma(E).
-\end{aligned}
-$$
-
-:::
-
-::: {class="fragment" data-fragment-index="3" style="margin-top:-15px;margin-left:100px;"}
-- **Backus-Gilbert method**  
-  - Construct smeared spectral function <!--with controlled resolution-->
-:::
-
-::: {class="fragment" data-fragment-index="5" style="margin-top:15px; margin-left:100px;"}
-- **Bayesian approaches** (MEM, BR, etc.)  
-<!-- - Use prior knowledge to regularize the inversion -->
-:::
-
-::: {class="fragment" data-fragment-index="6" style="margin-top:-15px; margin-left:100px;"}
-- **Other approaches**:  
-  -  Neural networks, Deep-learning...
-:::
-
-
-:::
-
-::::
-
-
-## Application to the Sphaleron Rate
-
-:::: {.columns}
-
-::: {.column width="55%"}
-
-::: {class="fragment" data-fragment-index="1" style="margin-top:-10px;"}
-- **Sphaleron rate** &Leftrightarrow; **frequency of topological transitions** 
-:::
-
-::: {class="fragment" data-fragment-index="2" style="margin-top:-10px;"}
-- Measure **topological charge correlator** in Euclidean time  
-$$\small C(t) = \langle Q(t) Q(0) \rangle $$
-:::
-
-::: {class="fragment" data-fragment-index="3" style="margin-top:-10px;"}
-- Need **real-time sphaleron rate**:  
-$$\small \Gamma_\mathrm{sphal} \sim \lim_{\omega\to 0} \frac{\rho(\omega)}{\omega} $$
-:::
-
-
-::: {class="fragment" data-fragment-index="4" style="margin-top:-10px;"}
-- Challenges: **ill-posed**, noisy data, limited temporal extent
-:::
-
-::: {class="fragment" data-fragment-index="5" style="margin-top:-10px;"}
-- Application of **Backus-Gilbert** method
-:::
-
-
-
-
-
-
-:::
-
-
-::: {.column width="45%"}
-
-::: {class="fragment" data-fragment-index="6" style="margin-top:-15px; margin-left:0;"}
-<figure style="width:100%; margin-top:-20px;">
-  <img src="sphall.png" style="width:100%;" />
-  <figcaption style="text-align:center; font-size:0.8em; color:#666; font-style:italic;">
-    From C. Bonanno F. D'Angelo M. D'Elia et al., PoS 2023
-  </figcaption>
-</figure>
-:::
-
-::: {class="fragment" data-fragment-index="6" style="margin-top:0px;"}
-$$ \small \frac{\Gamma_\mathrm{sphal}}{T^4} = 0.079(25) \qquad T=1.24T_c $$
-:::
-
-::: {class="fragment" data-fragment-index="7" style="margin-top:-10px;"}
-**To-do**: Extension to non-zero momentum
-:::
-
-:::
-
-
-
-
-
-
-::::
 
 
 ## That's not all
@@ -1414,3 +1288,132 @@ Just pick one, dive in and  [**have fun**]{style="color: #EB811B;"}!
 </script>
 
 # Thank you for your attention 
+
+# Back up
+
+## Inverse Problem/ Analytical Continuation
+
+
+**Correlators** are related to **spectral function** via an **inverse Fourier transform** 
+
+$$\small
+C(t)=\int  dE\; \exp{\left[-iEt\right]} \rho(E) 
+$$
+
+in **Minkowski time**
+
+
+::: {class="fragment" data-fragment-index="1" style="margin-top:10px;"}
+- Simulations are performed in **Euclidean time**
+:::
+
+::: {class="fragment" data-fragment-index="2" style="margin-top:-10px;"}
+- It means solving an **inverse Laplace problem**  
+- This is **ill-posed** and **numerically unstable**
+:::
+
+
+
+:::: {.columns}
+
+::: {.column width="40%"}
+
+
+:::
+
+::: {.column width="60%"}
+
+::: {class="fragment" data-fragment-index="4" style="margin-top:-175px;margin-left:140px;"}
+$$\begin{aligned}\small
+\hat \rho_\sigma(E) \;=\; \int dE_0 \; \sigma(E,E_0)\,\rho(E_0)\\
+\small C_\sigma(t) \;=\; \int dE \; e^{-Et} \,\rho_\sigma(E).
+\end{aligned}
+$$
+
+:::
+
+::: {class="fragment" data-fragment-index="3" style="margin-top:-15px;margin-left:100px;"}
+- **Backus-Gilbert method**  
+  - Construct smeared spectral function <!--with controlled resolution-->
+:::
+
+::: {class="fragment" data-fragment-index="5" style="margin-top:15px; margin-left:100px;"}
+- **Bayesian approaches** (MEM, BR, etc.)  
+<!-- - Use prior knowledge to regularize the inversion -->
+:::
+
+::: {class="fragment" data-fragment-index="6" style="margin-top:-15px; margin-left:100px;"}
+- **Other approaches**:  
+  -  Neural networks, Deep-learning...
+:::
+
+
+:::
+
+::::
+
+
+## Application to the Sphaleron Rate
+
+:::: {.columns}
+
+::: {.column width="55%"}
+
+::: {class="fragment" data-fragment-index="1" style="margin-top:-10px;"}
+- **Sphaleron rate** &Leftrightarrow; **frequency of topological transitions** 
+:::
+
+::: {class="fragment" data-fragment-index="2" style="margin-top:-10px;"}
+- Measure **topological charge correlator** in Euclidean time  
+$$\small C(t) = \langle Q(t) Q(0) \rangle $$
+:::
+
+::: {class="fragment" data-fragment-index="3" style="margin-top:-10px;"}
+- Need **real-time sphaleron rate**:  
+$$\small \Gamma_\mathrm{sphal} \sim \lim_{\omega\to 0} \frac{\rho(\omega)}{\omega} $$
+:::
+
+
+::: {class="fragment" data-fragment-index="4" style="margin-top:-10px;"}
+- Challenges: **ill-posed**, noisy data, limited temporal extent
+:::
+
+::: {class="fragment" data-fragment-index="5" style="margin-top:-10px;"}
+- Application of **Backus-Gilbert** method
+:::
+
+
+
+
+
+
+:::
+
+
+::: {.column width="45%"}
+
+::: {class="fragment" data-fragment-index="6" style="margin-top:-15px; margin-left:0;"}
+<figure style="width:100%; margin-top:-20px;">
+  <img src="sphall.png" style="width:100%;" />
+  <figcaption style="text-align:center; font-size:0.8em; color:#666; font-style:italic;">
+    From C. Bonanno F. D'Angelo M. D'Elia et al., PoS 2023
+  </figcaption>
+</figure>
+:::
+
+::: {class="fragment" data-fragment-index="6" style="margin-top:0px;"}
+$$ \small \frac{\Gamma_\mathrm{sphal}}{T^4} = 0.079(25) \qquad T=1.24T_c $$
+:::
+
+::: {class="fragment" data-fragment-index="7" style="margin-top:-10px;"}
+**To-do**: Extension to non-zero momentum
+:::
+
+:::
+
+
+
+
+
+
+::::

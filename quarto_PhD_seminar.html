@@ -10,7 +10,7 @@
   <meta name="generator" content="quarto-1.8.21">
 
   <meta name="author" content="Roberto Dionisio">
-  <meta name="dcterms.date" content="2025-09-07">
+  <meta name="dcterms.date" content="2025-09-08">
   <title>Strong Interactions need Strong Machines</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -162,7 +162,7 @@ Roberto Dionisio
     </div>
 </div>
 
-  <p class="date">September 7, 2025</p>
+  <p class="date">September 8, 2025</p>
 </section>
 <section id="why-i-choose-lattice-qcd" class="slide level2" data-auto-animate="true" data-auto-animate-easing="ease-out">
 <h2 data-id="quarto-animate-title">Why I choose Lattice QCD</h2>
@@ -395,7 +395,7 @@ Open questions and challenges
 </div></div>
 <div class="fragment" style="font-size:1.0em; font-style:italic; color:gray; margin-top:-20px; margin-right:0px; text-align:right;">
 <p><strong><span style="color: #EB811B;">Pure gauge</span> → already highly non-trivial:</strong><br>
-confinement, glueballs, non-linear self-interactions…</p>
+glueballs, non-linear self-interactions…</p>
 </div>
 </section>
 <section id="qcd-in-the-continuum-2" class="slide level2">
@@ -853,6 +853,11 @@ Discretize space-time as a <strong>4D grid</strong></li>
 <i>— M. Lüscher <br> “Lattice QCD - From Quarks Confinement to Asymptotic Freedom”</i>
 </footer>
 </section>
+<section>
+<section id="a-few-open-problems-and-challenges" class="title-slide slide level1 center">
+<h1>(A few) Open Problems and Challenges</h1>
+
+</section>
 <section id="chiral-symmetry-in-qcd" class="slide level2">
 <h2>Chiral Symmetry in QCD</h2>
 <div class="columns">
@@ -999,11 +1004,6 @@ M_\pi^2  \;=\; (m_u + m_d)\frac{\langle \bar{\psi}\psi\rangle}{f_\pi^2}
 </ol>
 </div>
 </section>
-<section>
-<section id="a-few-open-problems-and-challenges" class="title-slide slide level1 center">
-<h1>(A few) Open Problems and Challenges</h1>
-
-</section>
 <section id="topological-freezing" class="slide level2">
 <h2>Topological Freezing</h2>
 <div class="columns">
@@ -1086,108 +1086,6 @@ From C. Bonanno, C. Bonati and M. D’Elia, J. High Energ. Phys. 2021
 <li>Normalizing Flows?</li>
 </ul></li>
 </ul>
-</div>
-</div></div>
-</section>
-<section id="inverse-problem-analytical-continuation" class="slide level2">
-<h2>Inverse Problem/ Analytical Continuation</h2>
-<p><strong>Correlators</strong> are related to <strong>spectral function</strong> via an <strong>inverse Fourier transform</strong></p>
-<p><span class="math display">\[\small
-C(t)=\int  dE\; \exp{\left[-iEt\right]} \rho(E)
-\]</span></p>
-<p>in <strong>Minkowski time</strong></p>
-<div class="fragment" data-fragment-index="1" style="margin-top:10px;">
-<ul>
-<li>Simulations are performed in <strong>Euclidean time</strong></li>
-</ul>
-</div>
-<div class="fragment" data-fragment-index="2" style="margin-top:-10px;">
-<ul>
-<li>It means solving an <strong>inverse Laplace problem</strong><br>
-</li>
-<li>This is <strong>ill-posed</strong> and <strong>numerically unstable</strong></li>
-</ul>
-</div>
-<div class="columns">
-<div class="column" style="width:40%;">
-
-</div><div class="column" style="width:60%;">
-<div class="fragment" data-fragment-index="4" style="margin-top:-175px;margin-left:140px;">
-<p><span class="math display">\[\begin{aligned}\small
-\hat \rho_\sigma(E) \;=\; \int dE_0 \; \sigma(E,E_0)\,\rho(E_0)\\
-\small C_\sigma(t) \;=\; \int dE \; e^{-Et} \,\rho_\sigma(E).
-\end{aligned}
-\]</span></p>
-</div>
-<div class="fragment" data-fragment-index="3" style="margin-top:-15px;margin-left:100px;">
-<ul>
-<li><strong>Backus-Gilbert method</strong>
-<ul>
-<li>Construct smeared spectral function <!--with controlled resolution--></li>
-</ul></li>
-</ul>
-</div>
-<div class="fragment" data-fragment-index="5" style="margin-top:15px; margin-left:100px;">
-<ul>
-<li><strong>Bayesian approaches</strong> (MEM, BR, etc.)<br>
-<!-- - Use prior knowledge to regularize the inversion --></li>
-</ul>
-</div>
-<div class="fragment" data-fragment-index="6" style="margin-top:-15px; margin-left:100px;">
-<ul>
-<li><strong>Other approaches</strong>:
-<ul>
-<li>Neural networks, Deep-learning…</li>
-</ul></li>
-</ul>
-</div>
-</div></div>
-</section>
-<section id="application-to-the-sphaleron-rate" class="slide level2">
-<h2>Application to the Sphaleron Rate</h2>
-<div class="columns">
-<div class="column" style="width:55%;">
-<div class="fragment" data-fragment-index="1" style="margin-top:-10px;">
-<ul>
-<li><strong>Sphaleron rate</strong> ⇔ <strong>frequency of topological transitions</strong></li>
-</ul>
-</div>
-<div class="fragment" data-fragment-index="2" style="margin-top:-10px;">
-<ul>
-<li>Measure <strong>topological charge correlator</strong> in Euclidean time<br>
-<span class="math display">\[\small C(t) = \langle Q(t) Q(0) \rangle \]</span></li>
-</ul>
-</div>
-<div class="fragment" data-fragment-index="3" style="margin-top:-10px;">
-<ul>
-<li>Need <strong>real-time sphaleron rate</strong>:<br>
-<span class="math display">\[\small \Gamma_\mathrm{sphal} \sim \lim_{\omega\to 0} \frac{\rho(\omega)}{\omega} \]</span></li>
-</ul>
-</div>
-<div class="fragment" data-fragment-index="4" style="margin-top:-10px;">
-<ul>
-<li>Challenges: <strong>ill-posed</strong>, noisy data, limited temporal extent</li>
-</ul>
-</div>
-<div class="fragment" data-fragment-index="5" style="margin-top:-10px;">
-<ul>
-<li>Application of <strong>Backus-Gilbert</strong> method</li>
-</ul>
-</div>
-</div><div class="column" style="width:45%;">
-<div class="fragment" data-fragment-index="6" style="margin-top:-15px; margin-left:0;">
-<figure style="width:100%; margin-top:-20px;">
-<img src="sphall.png" style="width:100%;">
-<figcaption style="text-align:center; font-size:0.8em; color:#666; font-style:italic;">
-From C. Bonanno F. D’Angelo M. D’Elia et al., PoS 2023
-</figcaption>
-</figure>
-</div>
-<div class="fragment" data-fragment-index="6" style="margin-top:0px;">
-<p><span class="math display">\[ \small \frac{\Gamma_\mathrm{sphal}}{T^4} = 0.079(25) \qquad T=1.24T_c \]</span></p>
-</div>
-<div class="fragment" data-fragment-index="7" style="margin-top:-10px;">
-<p><strong>To-do</strong>: Extension to non-zero momentum</p>
 </div>
 </div></div>
 </section>
@@ -1395,6 +1293,115 @@ Just pick one, dive in and <span style="color: #EB811B;"><strong>have fun</stron
 <section id="thank-you-for-your-attention" class="title-slide slide level1 center">
 <h1>Thank you for your attention</h1>
 
+</section>
+
+<section>
+<section id="back-up" class="title-slide slide level1 center">
+<h1>Back up</h1>
+
+</section>
+<section id="inverse-problem-analytical-continuation" class="slide level2">
+<h2>Inverse Problem/ Analytical Continuation</h2>
+<p><strong>Correlators</strong> are related to <strong>spectral function</strong> via an <strong>inverse Fourier transform</strong></p>
+<p><span class="math display">\[\small
+C(t)=\int  dE\; \exp{\left[-iEt\right]} \rho(E)
+\]</span></p>
+<p>in <strong>Minkowski time</strong></p>
+<div class="fragment" data-fragment-index="1" style="margin-top:10px;">
+<ul>
+<li>Simulations are performed in <strong>Euclidean time</strong></li>
+</ul>
+</div>
+<div class="fragment" data-fragment-index="2" style="margin-top:-10px;">
+<ul>
+<li>It means solving an <strong>inverse Laplace problem</strong><br>
+</li>
+<li>This is <strong>ill-posed</strong> and <strong>numerically unstable</strong></li>
+</ul>
+</div>
+<div class="columns">
+<div class="column" style="width:40%;">
+
+</div><div class="column" style="width:60%;">
+<div class="fragment" data-fragment-index="4" style="margin-top:-175px;margin-left:140px;">
+<p><span class="math display">\[\begin{aligned}\small
+\hat \rho_\sigma(E) \;=\; \int dE_0 \; \sigma(E,E_0)\,\rho(E_0)\\
+\small C_\sigma(t) \;=\; \int dE \; e^{-Et} \,\rho_\sigma(E).
+\end{aligned}
+\]</span></p>
+</div>
+<div class="fragment" data-fragment-index="3" style="margin-top:-15px;margin-left:100px;">
+<ul>
+<li><strong>Backus-Gilbert method</strong>
+<ul>
+<li>Construct smeared spectral function <!--with controlled resolution--></li>
+</ul></li>
+</ul>
+</div>
+<div class="fragment" data-fragment-index="5" style="margin-top:15px; margin-left:100px;">
+<ul>
+<li><strong>Bayesian approaches</strong> (MEM, BR, etc.)<br>
+<!-- - Use prior knowledge to regularize the inversion --></li>
+</ul>
+</div>
+<div class="fragment" data-fragment-index="6" style="margin-top:-15px; margin-left:100px;">
+<ul>
+<li><strong>Other approaches</strong>:
+<ul>
+<li>Neural networks, Deep-learning…</li>
+</ul></li>
+</ul>
+</div>
+</div></div>
+</section>
+<section id="application-to-the-sphaleron-rate" class="slide level2">
+<h2>Application to the Sphaleron Rate</h2>
+<div class="columns">
+<div class="column" style="width:55%;">
+<div class="fragment" data-fragment-index="1" style="margin-top:-10px;">
+<ul>
+<li><strong>Sphaleron rate</strong> ⇔ <strong>frequency of topological transitions</strong></li>
+</ul>
+</div>
+<div class="fragment" data-fragment-index="2" style="margin-top:-10px;">
+<ul>
+<li>Measure <strong>topological charge correlator</strong> in Euclidean time<br>
+<span class="math display">\[\small C(t) = \langle Q(t) Q(0) \rangle \]</span></li>
+</ul>
+</div>
+<div class="fragment" data-fragment-index="3" style="margin-top:-10px;">
+<ul>
+<li>Need <strong>real-time sphaleron rate</strong>:<br>
+<span class="math display">\[\small \Gamma_\mathrm{sphal} \sim \lim_{\omega\to 0} \frac{\rho(\omega)}{\omega} \]</span></li>
+</ul>
+</div>
+<div class="fragment" data-fragment-index="4" style="margin-top:-10px;">
+<ul>
+<li>Challenges: <strong>ill-posed</strong>, noisy data, limited temporal extent</li>
+</ul>
+</div>
+<div class="fragment" data-fragment-index="5" style="margin-top:-10px;">
+<ul>
+<li>Application of <strong>Backus-Gilbert</strong> method</li>
+</ul>
+</div>
+</div><div class="column" style="width:45%;">
+<div class="fragment" data-fragment-index="6" style="margin-top:-15px; margin-left:0;">
+<figure style="width:100%; margin-top:-20px;">
+<img src="sphall.png" style="width:100%;">
+<figcaption style="text-align:center; font-size:0.8em; color:#666; font-style:italic;">
+From C. Bonanno F. D’Angelo M. D’Elia et al., PoS 2023
+</figcaption>
+</figure>
+</div>
+<div class="fragment" data-fragment-index="6" style="margin-top:0px;">
+<p><span class="math display">\[ \small \frac{\Gamma_\mathrm{sphal}}{T^4} = 0.079(25) \qquad T=1.24T_c \]</span></p>
+</div>
+<div class="fragment" data-fragment-index="7" style="margin-top:-10px;">
+<p><strong>To-do</strong>: Extension to non-zero momentum</p>
+</div>
+</div></div>
+
 <div class="reveal-header">
 <div class="header-title">
 <p> </p>
@@ -1403,7 +1410,7 @@ Just pick one, dive in and <span style="color: #EB811B;"><strong>have fun</stron
 <img data-src="cherubino_white.png">
 </div>
 </div>
-</section>
+</section></section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <div class="footer footer-default">
